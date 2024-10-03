@@ -29,6 +29,10 @@ app.get("/", (req, res) => {
 		.send(parsedIndexContents);
 });
 
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, req.url));
+});
+
 app.listen(1234, () => {
 	console.log("Running: http://localhost:1234");
 
