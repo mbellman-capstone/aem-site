@@ -40,15 +40,32 @@
 	z-index: 2;
 }
 
-.c-footer__links {
+.c-footer__links-area {
 	display: flex;
 }
 
-.c-footer__link-list {
+.c-footer__links-block {
 	width: 250px;
 }
 
 .c-footer__links-title {
 	color: #C0FF76;
 	font-size: 23px;
+}
+
+.c-footer__links-list {
+	list-style: none;
+	padding: 0;
+}
+
+.c-footer__links-list li {
+	font-family: "Fredoka";
+	font-size: 16px;
+	font-weight: 200;
+	margin: 15px 0;
+}
+
+.c-footer__links-list a {
+	color: #fff;
+	text-decoration: none;
 }
