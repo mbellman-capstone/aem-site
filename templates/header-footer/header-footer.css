@@ -1,5 +1,6 @@
 .c-header {
 	background-color: rgba(255, 255, 255, 0.1);
+	background-color: #66008c;
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
 	height: 100px;
 	left: 0;
@@ -11,6 +12,7 @@
 
 .c-main {
 	min-height: 2000px;
+	padding-top: 100px;
 }
 
 .c-footer {

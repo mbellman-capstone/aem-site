@@ -1,11 +1,12 @@
-.c-banner {
+.c-home-banner {
 	display: flex;
+	height: 39vw;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
 
-.c-banner::after {
+.c-home-banner::after {
 	background-color: #fff;
 	border-radius: 50%;
 	bottom: -7.5vw;
@@ -17,11 +18,11 @@
 	width: 150vw;
 }
 
-.c-banner__background {
+.c-home-banner__background {
 	position: relative;
 }
 
-.c-banner__background img {
+.c-home-banner__background img {
 	width: 100%;
 	position: relative;
 }
