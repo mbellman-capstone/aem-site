@@ -1,16 +1,16 @@
-.c-home-banner {
+.c-support-banner {
+	background-color: #8DF1FF;
 	display: flex;
-	height: 39vw;
+	height: 23.4vw;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
 
-.c-home-banner::after {
+.c-support-banner::after {
 	background-color: #fff;
 	border-radius: 50%;
-	bottom: -11.5vw;
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+	bottom: -12.5vw;
 	content: "";
 	height: 15vw;
 	left: -25vw;
@@ -18,11 +18,11 @@
 	width: 150vw;
 }
 
-.c-home-banner__background {
+.c-support-banner__background {
 	position: relative;
 }
 
-.c-home-banner__background img {
+.c-support-banner__background img {
 	width: 100%;
 	position: relative;
 }

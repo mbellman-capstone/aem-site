@@ -1,4 +1,4 @@
-.c-home-banner {
+.c-product-banner {
 	display: flex;
 	height: 39vw;
 	overflow: hidden;
@@ -6,11 +6,11 @@
 	width: 100%;
 }
 
-.c-home-banner::after {
-	background-color: #fff;
+.c-product-banner::after {
+	background-color: transparent;
 	border-radius: 50%;
-	bottom: -11.5vw;
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+	bottom: 2vw;
+	box-shadow: 0 52px 0 50px #fff;
 	content: "";
 	height: 15vw;
 	left: -25vw;
@@ -18,11 +18,11 @@
 	width: 150vw;
 }
 
-.c-home-banner__background {
+.c-product-banner__background {
 	position: relative;
 }
 
-.c-home-banner__background img {
+.c-product-banner__background img {
 	width: 100%;
 	position: relative;
 }
