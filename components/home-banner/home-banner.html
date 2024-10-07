@@ -3,10 +3,18 @@
 		window.addEventListener("scroll", function() {
 			var scrollTop = window.pageYOffset;
 
-			document.getElementById('banner-1-image').style.top = scrollTop * 0.5 + "px";
+			document.getElementById('banner-1-image').style.transform = `translateY(${scrollTop * 0.5}px)`;
 		});
 	</script>
 	<div class="c-home-banner__background" id="banner-1-background">
-		<img src="/assets/purple-sky.png" id="banner-1-image" />
+		<img src="./assets/purple-sky.png" id="banner-1-image">
+	</div>
+	<div class="c-home-banner__content">
+		<div class="c-home-banner__text">
+			We help <span>elementary</span> kids make sense of the world
+		</div>
+		<div class="c-home-banner__image">
+			<img src="./assets/girl-with-screen.png">
+		</div>
 	</div>
 </div>

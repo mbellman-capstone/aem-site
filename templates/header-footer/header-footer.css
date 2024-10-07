@@ -11,10 +11,44 @@
 }
 
 .c-main {
-	min-height: 2000px;
+	min-height: 1000px;
 	padding-top: 100px;
 }
 
 .c-footer {
+	background-color: #470061;
+	padding: 20px 100px 40px;
+	position: relative;
+}
 
+.c-footer::before {
+	background-color: transparent;
+	border-radius: 50%;
+	top: -17vw;
+	box-shadow: 0 52px 0 50px #470061;
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	position: absolute;
+	width: 150vw;
+}
+
+.c-footer__content {
+	margin: 0 auto;
+	position: relative;
+	width: 922px;
+	z-index: 2;
+}
+
+.c-footer__links {
+	display: flex;
+}
+
+.c-footer__link-list {
+	width: 250px;
+}
+
+.c-footer__links-title {
+	color: #C0FF76;
+	font-size: 23px;
 }

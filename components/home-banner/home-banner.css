@@ -1,3 +1,12 @@
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .c-home-banner {
 	display: flex;
 	height: 39vw;
@@ -19,10 +28,44 @@
 }
 
 .c-home-banner__background {
-	position: relative;
+	position: absolute;
 }
 
 .c-home-banner__background img {
-	width: 100%;
 	position: relative;
+	width: 100%;
+}
+
+.c-home-banner__content {
+	display: flex;
+	margin: 0 0 0 10%;
+	position: relative;
+}
+
+.c-home-banner__text {
+	animation: fade-in 0.5s linear;
+	color: #fff;
+	font-size: 4.5vw;
+	margin-top: 8%;
+	text-align: center;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	width: 40%;
+}
+
+.c-home-banner__text span {
+	color: #C0FF76;
+}
+
+.c-home-banner__image {
+	align-items: flex-start;
+	display: flex;
+	height: auto;
+	justify-content: center;
+	margin-top: 3%;
+	width: 60%;
+}
+
+.c-home-banner__image img {
+	position: relative;
+	width: 90%;
 }
