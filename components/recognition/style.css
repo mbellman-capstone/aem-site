@@ -1,0 +1,35 @@
+.c-recognition {
+	background-color: #fff;
+	height: 200px;
+	margin: 120px 0;
+	position: relative;
+}
+
+.c-recognition::before,
+.c-recognition::after {
+	background-color: #fff;
+	border-radius: 50%;
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	pointer-events: none;
+	position: absolute;
+	width: 150vw;
+}
+
+.c-recognition::before {
+	top: -2.5vw;
+}
+
+.c-recognition::after {
+	bottom: -2.5vw;
+}
+
+.c-recognition__content {
+	margin: 0 auto;
+	max-width: 850px;
+	padding: 60px 0;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}

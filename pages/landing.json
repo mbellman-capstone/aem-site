@@ -10,30 +10,41 @@
 		{
 			"component": "activity-preview",
 			"direction": "",
-			"title": "<span style='background-color: #8DF1FF;'>Go</span> Research",
+			"title": "Go Research",
 			"text": "Nonfiction articles for curious kids!<br>Discover thousands of standards-aligned articles across Science, Social Studies, Biographies, Animals and Health with PebbleGo! All PebbleGo articles are also available in Spanish. Articles for upper elementary learners are available in PebbleGo Next.",
+			"buttonText": "PebbleGo",
+			"color": "#8DF1FF",
 			"image": "./assets/kids-with-computer.png"
 		},
 		{
 			"component": "activity-preview",
 			"direction": "reverse",
-			"title": "<span style='background-color: #C0FF76;'>Go</span> Read",
+			"title": "Go Read",
 			"text": "Interactive eBooks, just as they should be!<br>Choose from thousands of engaging fiction and nonfiction titles aligned to curriculum standards. One copy of an eBook serves every student and can be accessed 24/7 from school, home or on the go.",
+			"buttonText": "PebbleGo",
+			"color": "#C0FF76",
 			"image": "./assets/girl-with-headphones.png"
 		},
 		{
 			"component": "activity-preview",
 			"direction": "",
-			"title": "<span style='background-color: #FCF43D'>Go</span> Create",
+			"title": "Go Create",
 			"text": "Provide authentic, engaging ways for young students to demonstrate learning and give students creative and accessible ways to show what they know with features that encourage experimentation and fun.",
+			"buttonText": "PebbleGo",
+			"color": "#FCF43D",
 			"image": "./assets/girl-with-paints.png"
 		},
 		{
 			"component": "activity-preview",
 			"direction": "reverse",
-			"title": "<span style='background-color: #DB7BFF'>Go</span> Discover",
+			"title": "Go Discover",
 			"text": "Save time and effort by providing educators with featured content, standards search, activities, and lesson plans in an easily accessible way.",
+			"buttonText": "PebbleGo",
+			"color": "#DB7BFF",
 			"image": "./assets/woman-smiling.png"
+		},
+		{
+			"component": "recognition"
 		}
 	]
 }
