@@ -1,0 +1,47 @@
+.c-activity-preview {
+	display: flex;
+	margin: 20px auto;
+	width: 70%;
+}
+
+.c-activity-preview__description {
+	display: flex;
+	flex-direction: column;
+	font-family: "Fredoka", sans-serif;
+	justify-content: center;
+	width: 50%;
+}
+
+.c-activity-preview__title {
+	font-size: 4vw;
+	font-variation-settings: "wdth" 100;
+	font-weight: 500;
+	margin: 0;
+}
+
+.c-activity-preview__title span {
+	background-color: #8df1ff;
+	border-radius: 3vw;
+	padding: 0 15px 5px;
+}
+
+.c-activity-preview__text {
+	font-size: 1.2vw;
+	font-variation-settings: "wdth" 100;
+	font-weight: 100;
+	letter-spacing: 0.2px;
+	line-height: 1.9vw;
+}
+
+.c-activity-preview__text span {
+	display: block;
+}
+
+.c-activity-preview__image {
+	position: relative;
+	width: 50%;
+}
+
+.c-activity-preview__image img {
+	width: 100%;
+}

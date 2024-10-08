@@ -1,6 +1,7 @@
 .c-home-summary {
 	background-color: #fff;
-	padding: 40px 0 80px;
+	margin-bottom: 100px;
+	padding: 40px 0 40px;
 	position: relative;
 }
 
@@ -64,8 +65,10 @@
 }
 
 .c-home-summary__text span:nth-of-type(2) {
-	font-size: 1.2vw;
 	font-family: "Fraunces", serif;
+	font-size: 1.2vw;
+	font-style: italic;
+	font-weight: 200;
 	margin-right: 20px;
 	text-align: right;
 }

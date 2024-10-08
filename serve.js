@@ -12,7 +12,7 @@ function parseAndReplaceTags(htmlString, tagName) {
 	const regExp = new RegExp(`<${tagName} name="(.*)" \/>`, "g");
 
 	return htmlString.replace(regExp, (_, value) => {
-		const fileContents = fs.readFileSync(path.join(__dirname, `/${tagName}s/`, `${value}/${value}.html`)).toString();
+		const fileContents = fs.readFileSync(path.join(__dirname, `/${tagName}s/`, `${value}/${tagName}.html`)).toString();
 
 		// Recursively replace <component> tags
 		return parseAndReplaceTags(fileContents, "component");
