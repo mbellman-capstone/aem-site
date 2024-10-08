@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	font-family: "Fraunces", serif;
 	font-variation-settings: "opsz" var(--opsz), "wght" var(--wght), "SOFT" var(--SOFT), "WONK" var(--WONK);
+	overflow-x: hidden;
 	--SOFT: 70;
 	--wght: 400;
 	--WONK: 0;
