@@ -3,30 +3,46 @@ const fs = require("fs");
 const express = require("express");
 const app = express();
 
-/**
- * @param {string} htmlString
- * @param {string} tagName
- * @returns {string}
- */
-function parseAndReplaceTags(htmlString, tagName) {
-	const regExp = new RegExp(`<${tagName} name="(.*)" \/>`, "g");
+app.get("/*", (req, res, next) => {
+	if (req.path.includes(".")) {
+		return next();
+	}
 
-	return htmlString.replace(regExp, (_, value) => {
-		const fileContents = fs.readFileSync(path.join(__dirname, `/${tagName}s/`, `${value}/${tagName}.html`)).toString();
+	const pagename = req.path.split("/")[1];
+	const pagefile = `./pages/${pagename || "landing"}.json`;
 
-		// Recursively replace <component> tags
-		return parseAndReplaceTags(fileContents, "component");
-	});
-}
+	delete require.cache[require.resolve(pagefile)];
 
-app.get("/", (req, res) => {
-	const indexContents = fs.readFileSync("./index.html").toString();
-	const parsedIndexContents = parseAndReplaceTags(indexContents, "template");
+	const { template, components } = require(pagefile);
+
+	const contentMarkup = components.map(({ component, ...options }) => {
+		let componentMarkup = fs
+			.readFileSync(`./components/${component}/component.html`)
+			.toString();
+
+		for (const key in options) {
+			const value = options[key];
+
+			componentMarkup = componentMarkup.replace(`{{${key}}}`, value);
+		}
+
+		return componentMarkup;
+	}).join("");
+
+	const templateMarkup = fs
+		.readFileSync(`./templates/${template}/template.html`)
+		.toString()
+		.replace("{{content}}", contentMarkup);
+
+	const indexContents = fs
+		.readFileSync("./index.html")
+		.toString()
+		.replace("{{template}}", templateMarkup)
 
 	res
 		.status(200)
 		.contentType("text/html")
-		.send(parsedIndexContents);
+		.send(indexContents);
 });
 
 app.get("*", (req, res) => {

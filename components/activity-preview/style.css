@@ -4,6 +4,10 @@
 	width: 70%;
 }
 
+.c-activity-preview.reverse {
+	flex-direction: row-reverse;
+}
+
 .c-activity-preview__description {
 	display: flex;
 	flex-direction: column;
@@ -16,12 +20,15 @@
 	font-size: 4vw;
 	font-variation-settings: "wdth" 100;
 	font-weight: 500;
-	margin: 0;
+	margin: 0 0 0 -20px;
+	position: relative;
 }
 
 .c-activity-preview__title span {
 	background-color: #8df1ff;
 	border-radius: 3vw;
+	display: inline-block;
+	line-height: 4vw;
 	padding: 0 15px 5px;
 }
 
@@ -38,10 +45,16 @@
 }
 
 .c-activity-preview__image {
+	display: flex;
+	justify-content: flex-start;
 	position: relative;
 	width: 50%;
 }
 
 .c-activity-preview__image img {
 	width: 100%;
+}
+
+.c-activity-preview.reverse .c-activity-preview__image {
+	padding-right: 4vw;
 }
