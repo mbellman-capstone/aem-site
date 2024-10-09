@@ -1,6 +1,5 @@
 .c-recognition {
 	background-color: #fff;
-	height: 200px;
 	margin: 120px 0;
 	position: relative;
 }
@@ -32,4 +31,80 @@
 	position: relative;
 	width: 100%;
 	z-index: 2;
+}
+
+.c-recognition__quote-carousel {
+	position: relative;
+	width: 100%;
+}
+
+.c-recognition__quote-carousel::before,
+.c-recognition__quote-carousel::after {
+	content: "";
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+}
+
+.c-recognition__quote-carousel::before {
+	background-image: url("/assets/quotes.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.c-recognition__quote-carousel::after {
+	background-image: url("/assets/quotes.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 8vw;
+	right: 0;
+	top: 0;
+	transform: rotateY(180deg);
+}
+
+.c-recognition__quote {
+	color: #666;
+	font-size: 2vw;
+	margin: 0 70px;
+	text-align: center;
+}
+
+.c-recognition__quote-attribution {
+	color: #666;
+	margin-top: 40px;
+	font-size: 2vw;
+	font-style: italic;
+	font-variation-settings: "wght" 100;
+	text-align: center;
+}
+
+.c-recognition__quote-attribution span {
+	font-variation-settings: "wght" 500;
+}
+
+.c-recognition__banner {
+	font-size: 4vw;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.c-recognition__banner::before,
+.c-recognition__banner::after {
+	border: 0;
+	border-top: 1px solid black;
+	content: "";
+	margin: 0 25px;
+	width: 40%;
+}
+
+.c-recognition__awards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.c-recognition__awards img {
+	height: auto;
+	width: 20%;
 }

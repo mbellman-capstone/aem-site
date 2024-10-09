@@ -72,13 +72,13 @@
 
 .c-activity-preview__button svg {
 	margin-left: 10px;
-	transition: all 0.5s cubic-bezier(.08,1.99,.83,.67);
+	transition: all 0.3s cubic-bezier(.08,1.99,.83,.67);
 }
 
 .c-activity-preview__button:hover svg {
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .c-activity-preview__button:active svg {
-	margin-left: 30px;
+	margin-left: 50px;
 }
