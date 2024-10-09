@@ -1,4 +1,15 @@
 <div class="c-activity-preview {{direction}}">
+	<script>
+		window.addEventListener("scroll", function() {
+			var image = document.getElementById("image-{{id}}");
+			var bounds = image.getBoundingClientRect();
+			var center = bounds.top + bounds.height / 2;
+			var centerOffset = center - window.innerHeight / 2;
+
+			image.style.opacity = 1 - (0.001 * Math.abs(centerOffset));
+			image.style.transform = `translateY(${-0.1 * centerOffset}px)`;
+		});
+	</script>
 	<div class="c-activity-preview__description">
 		<h2 class="c-activity-preview__title">
 			{{title}}
@@ -16,6 +27,6 @@
 		</button>
 	</div>
 	<div class="c-activity-preview__image">
-		<img src="{{image}}">
+		<img src="{{image}}" id="image-{{id}}">
 	</div>
 </div>

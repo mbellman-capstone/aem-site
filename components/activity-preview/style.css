@@ -79,6 +79,10 @@
 	margin-left: 30px;
 }
 
+.c-activity-preview__button:active {
+	transform: scale(0.95);
+}
+
 .c-activity-preview__button:active svg {
 	margin-left: 50px;
 }

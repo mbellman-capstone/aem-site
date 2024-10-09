@@ -23,7 +23,7 @@ app.get("/*", (req, res, next) => {
 		for (const key in options) {
 			const value = options[key];
 
-			componentMarkup = componentMarkup.replace(`{{${key}}}`, value);
+			componentMarkup = componentMarkup.replace(new RegExp(`{{${key}}}`, "g"), value);
 		}
 
 		return componentMarkup;

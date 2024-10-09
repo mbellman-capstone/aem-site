@@ -9,6 +9,7 @@
 		},
 		{
 			"component": "activity-preview",
+			"id": "activity-research",
 			"direction": "",
 			"title": "Go Research",
 			"text": "Nonfiction articles for curious kids!<br>Discover thousands of standards-aligned articles across Science, Social Studies, Biographies, Animals and Health with PebbleGo! All PebbleGo articles are also available in Spanish. Articles for upper elementary learners are available in PebbleGo Next.",
@@ -18,6 +19,7 @@
 		},
 		{
 			"component": "activity-preview",
+			"id": "activity-read",
 			"direction": "reverse",
 			"title": "Go Read",
 			"text": "Interactive eBooks, just as they should be!<br>Choose from thousands of engaging fiction and nonfiction titles aligned to curriculum standards. One copy of an eBook serves every student and can be accessed 24/7 from school, home or on the go.",
@@ -27,6 +29,7 @@
 		},
 		{
 			"component": "activity-preview",
+			"id": "activity-create",
 			"direction": "",
 			"title": "Go Create",
 			"text": "Provide authentic, engaging ways for young students to demonstrate learning and give students creative and accessible ways to show what they know with features that encourage experimentation and fun.",
@@ -36,6 +39,7 @@
 		},
 		{
 			"component": "activity-preview",
+			"id": "activity-discover",
 			"direction": "reverse",
 			"title": "Go Discover",
 			"text": "Save time and effort by providing educators with featured content, standards search, activities, and lesson plans in an easily accessible way.",
@@ -45,6 +49,9 @@
 		},
 		{
 			"component": "recognition"
+		},
+		{
+			"component": "newsletter-promo"
 		}
 	]
 }
