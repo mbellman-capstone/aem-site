@@ -83,6 +83,21 @@
 	font-variation-settings: "wght" 500;
 }
 
+.c-recognition__quote-slider {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.c-recognition__quote-slide {
+	border-radius: 9px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	height: 18px;
+	margin: 0 6px;
+	width: 18px;
+}
+
 .c-recognition__banner {
 	font-size: 4vw;
 	text-align: center;

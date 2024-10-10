@@ -7,6 +7,15 @@
 	}
 }
 
+@keyframes squiggle {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 200px 0;
+	}
+}
+
 @keyframes sparkle {
 	0% {
 		opacity: 0;
@@ -29,7 +38,7 @@
 .c-home-summary {
 	background-color: #fff;
 	margin-bottom: 100px;
-	padding: 40px 0 40px;
+	padding: 10px 0 40px;
 	position: relative;
 }
 
@@ -46,6 +55,8 @@
 
 .c-home-summary__title {
 	font-size: 3.2vw;
+	margin-top: 0;
+	position: relative;
 	text-align: center;
 }
 
@@ -54,6 +65,20 @@
 	font-size: 4vw;
   font-variation-settings: "wdth" 100;
 	font-weight: 500;
+}
+
+.c-home-summary__title::after {
+	animation: squiggle 5s linear forwards infinite;
+	background-image: url("/assets/squiggle.png");
+	background-repeat: repeat-x;
+	background-size: 200px 10px;
+	bottom: -10%;
+	content: "";
+	height: 10px;
+	left: 50%;
+	margin-left: -100px;
+	position: absolute;
+	width: 200px;
 }
 
 .c-home-summary__content {
@@ -129,7 +154,7 @@ img.c-home-summary__animal {
 
 .c-home-summary__sparkle:nth-of-type(1) {
 	animation: sparkle 2s linear forwards infinite;
-	animation-delay: 0.8s;
+	animation-delay: 1.4s;
 	height: 2vw;
 	right: -20px;
 	top: -10px;

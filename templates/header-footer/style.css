@@ -1,6 +1,6 @@
 .c-header {
-	background-color: rgba(255, 255, 255, 0.1);
-	background-color: #66008c;
+	background-image: url("/assets/header-background.png");
+	background-size: cover;
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
 	height: 100px;
 	left: 0;
@@ -17,7 +17,7 @@
 
 .c-footer {
 	background-color: #470061;
-	margin-top: 150px;
+	margin-top: 120px;
 	padding: 20px 100px 40px;
 	position: relative;
 }
