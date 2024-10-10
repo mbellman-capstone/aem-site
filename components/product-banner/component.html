@@ -3,10 +3,31 @@
 		window.addEventListener("scroll", function() {
 			var scrollTop = window.pageYOffset;
 
-			document.getElementById('banner-1-image').style.top = scrollTop * 0.5 + "px";
+			document.getElementById('banner-1-image').style.transform = `translateY(${scrollTop * 0.5}px`;
 		});
 	</script>
 	<div class="c-product-banner__background" id="banner-1-background">
-		<img src="/assets/purple-sky.png" id="banner-1-image" />
+		<img src="/assets/pgo-banner.png" id="banner-1-image" />
+	</div>
+
+	<div class="c-product-banner__content">
+		<div class="c-product-banner__text">
+			<h1 class="c-product-banner__title">
+				{{title}}
+			</h1>
+			<p class="c-product-banner__tagline">
+				{{tagline}}
+			</p>
+			<button class="c-button c-product-banner__button" style="background-color: {{color}};">
+				{{buttonText}}
+			</button>
+			<p class="c-product-banner__description">
+				{{description}}
+			</p>
+		</div>
+	</div>
+
+	<div class="c-product-banner__graphic">
+		<img src="{{graphic}}">
 	</div>
 </div>

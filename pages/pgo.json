@@ -1,0 +1,14 @@
+{
+	"template": "header-footer",
+	"components": [
+		{
+			"component": "product-banner",
+			"title": "PebbleGo",
+			"tagline": "Where K-2 kids go to make sense<br>of the world around them",
+			"buttonText": "Preview PebbleGo",
+			"description": "Thousands of standards-aligned, nonfiction articles<br>designed to be understood by early elementary learners.",
+			"color": "#8DF1FF",
+			"graphic": "./assets/sea-turtle.png"
+		}
+	]
+}

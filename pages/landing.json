@@ -2,7 +2,8 @@
 	"template": "header-footer",
 	"components": [
 		{
-			"component": "home-banner"
+			"component": "home-banner",
+			"text": "We help <span>elementary</span> kids make sense of the world"
 		},
 		{
 			"component": "home-summary"
