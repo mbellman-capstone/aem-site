@@ -1,3 +1,7 @@
+/**
+ * Global animations
+ * -----------------
+ */
 @keyframes fade-in {
 	0% {
 		opacity: 0;
@@ -19,6 +23,10 @@ body {
 	--opsz: 20;
 }
 
+/**
+ * Global component: Button
+ * ------------------------
+ */
 .c-button {
 	align-items: center;
 	border: 2px solid black;
@@ -42,4 +50,90 @@ body {
 
 .c-button:active {
 	transform: scale(0.95);
+}
+
+/**
+ * Global component: Header
+ * ------------------------
+ */
+.c-header {
+	background-image: url("/assets/header-background.png");
+	background-size: cover;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+	height: 100px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+/**
+ * Global component: Main
+ * ----------------------
+ */
+.c-main {
+	padding-top: 100px;
+}
+
+/**
+ * Global component: Footer
+ * ------------------------
+ */
+.c-footer {
+	background-color: #470061;
+	margin-top: 120px;
+	padding: 20px 100px 40px;
+	position: relative;
+}
+
+.c-footer::before {
+	background-color: transparent;
+	border-radius: 50%;
+	top: -17vw;
+	box-shadow: 0 52px 0 50px #470061;
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	pointer-events: none;
+	position: absolute;
+	width: 150vw;
+}
+
+.c-footer__content {
+	margin: 0 auto;
+	position: relative;
+	width: 922px;
+	z-index: 2;
+}
+
+.c-footer__links-area {
+	display: flex;
+}
+
+.c-footer__links-block {
+	width: 300px;
+}
+
+.c-footer__links-title {
+	color: #C0FF76;
+	font-size: 23px;
+}
+
+.c-footer__links-list {
+	list-style: none;
+	padding: 0;
+}
+
+.c-footer__links-list li {
+	font-family: "Fredoka";
+	font-size: 16px;
+	font-variation-settings: "wdth" 100;
+	font-weight: 100;
+	margin: 15px 0;
+}
+
+.c-footer__links-list a {
+	color: #fff;
+	text-decoration: none;
 }

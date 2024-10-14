@@ -1,0 +1,66 @@
+{
+	"template": "help-page",
+	"data": {
+		"background": "./assets/using-pgo-header.png",
+		"title": "Using PebbleGo",
+		"subtitle": "Get started with PebbleGo",
+		"sectionGraphic1": "./assets/help-cursor.svg",
+		"sectionTitle1": "PebbleGo Article Features",
+		"sectionLinks1": [
+			{
+				"type": "link",
+				"url": "#",
+				"text": "How to Search PebbleGo"
+			},
+			{
+				"type": "link",
+				"url": "#",
+				"text": "Share Direct Links to Content"
+			},
+			{
+				"type": "link",
+				"url": "#",
+				"text": "Control Sounds in PebbleGo"
+			},
+			{
+				"type": "link",
+				"url": "#",
+				"text": "Range Maps in PebbleGo"
+			},
+			{
+				"type": "link",
+				"url": "#",
+				"text": "Question of the Day in PebbleGo"
+			}
+		],
+		"sectionGraphic2": "./assets/help-gears.svg",
+		"sectionTitle2": "Troubleshooting",
+		"sectionLinks2": [
+			{
+				"type": "link",
+				"url": "#",
+				"text": "System Requirements"
+			}
+		],
+		"sectionGraphic3": "./assets/help-paintbrush.svg",
+		"sectionTitle3": "PebbleGo Create Features",
+		"sectionLinks3": [
+			{
+				"type": "link",
+				"url": "#",
+				"text": "Creation Tool How-To's"
+			},
+			{
+				"type": "link",
+				"url": "#",
+				"text": "Sharing Projects"
+			},
+			{
+				"type": "link",
+				"url": "#",
+				"text": "Class Projects & Teacher Tools"
+			}
+		]
+	},
+	"components": []
+}

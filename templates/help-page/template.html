@@ -1,0 +1,130 @@
+<header class="c-header">
+
+</header>
+
+<main class="c-help-page-main">
+
+	<div class="c-support-banner">
+		<script>
+			window.addEventListener("scroll", function() {
+				var scrollTop = window.pageYOffset;
+				var bannerImage = document.querySelector(".c-support-banner__image");
+		
+				bannerImage.style.transform = `translateY(${scrollTop * 0.5}px)`;
+			});
+		</script>
+		<img class="c-support-banner__image" src="{{background}}">
+		<h1 class="c-support-banner__title">
+			{{title}}
+		</h1>
+	</div>
+
+	<h2 class="c-help-page__subtitle">
+		{{subtitle}}
+	</h2>
+
+	<button class="c-video-button">
+		<svg width="109" height="124" viewBox="0 0 109 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0.46321 62.6254V107.432C0.368998 109.444 0.748793 111.45 1.57195 113.289C2.3951 115.128 3.63863 116.747 5.20235 118.018C9.7183 121.577 15.3008 123.513 21.0507 123.513C26.8006 123.513 32.383 121.577 36.899 118.018C42.6844 114.017 48.5313 110.079 54.3783 106.14C69.765 95.6765 85.1518 85.4592 100.477 74.8116C112.048 66.7489 111.248 55.6706 99.3076 47.9772C91.7373 43.0534 84.4133 37.8838 76.9661 32.8985C63.0565 23.4818 49.2084 14.0647 35.2372 4.70953C32.0635 2.62196 28.4429 1.31159 24.6683 0.883879C20.8938 0.456168 17.0714 0.923745 13.5111 2.24825C5.14075 5.14096 0.278602 10.2488 0.401696 17.8807C0.586337 32.9597 0.46321 47.7926 0.46321 62.6254Z" fill="black" fill-opacity="0.5"/>
+		</svg>			
+	</button>
+
+	<div class="c-help-page__sections">
+
+		<div class="c-help-section">
+			<div class="c-help-section__graphic">
+				<img src="{{sectionGraphic1}}">				
+			</div>
+			<h3 class="c-help-section__title">
+				{{sectionTitle1}}
+			</h3>
+			<ul class="c-help-section__links">
+				{{sectionLinks1}}
+			</ul>
+		</div>
+
+		<div class="c-help-section">
+			<div class="c-help-section-graphic">
+				<img src="{{sectionGraphic2}}">				
+			</div>
+			<h3 class="c-help-section__title">
+				{{sectionTitle2}}
+			</h3>
+			<ul class="c-help-section__links">
+				{{sectionLinks2}}
+			</ul>
+		</div>
+
+		<div class="c-help-section">
+			<div class="c-help-section-graphic">
+				<img src="{{sectionGraphic3}}">				
+			</div>
+			<h3 class="c-help-section__title">
+				{{sectionTitle3}}
+			</h3>
+			<ul class="c-help-section__links">
+				{{sectionLinks3}}
+			</ul>
+		</div>
+
+	</div>
+
+</main>
+
+<footer class="c-footer">
+	<div class="c-footer__content">
+		<div class="c-footer__links-area">
+			<div class="c-footer__links-block">
+				<div class="c-footer__links-title">
+					More Info
+				</div>
+				<ul class="c-footer__links-list">
+					<li>
+						<a href="#">Administrator Login</a>
+					</li>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
+					<li>
+						<a href="#">Privacy Central</a>
+					</li>
+					<li>
+						<a href="#">Legal Central</a>
+					</li>
+					<li>
+						<a href="#">System Requirements</a>
+					</li>
+					<li>
+						<a href="#">Accessibility Statement</a>
+					</li>
+					<li>
+						<a href="#">Credits</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="c-footer__links-block">
+				<div class="c-footer__links-title">
+					About Us
+				</div>
+				<ul class="c-footer__links-list">
+					<li>
+						<a href="#">Our Story</a>
+					</li>
+					<li>
+						<a href="#">International</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">News & Updates</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
