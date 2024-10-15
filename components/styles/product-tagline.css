@@ -1,0 +1,13 @@
+.c-product-tagline {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.c-product-tagline__text {
+	font-size: 40px;
+	font-variation-settings: "wght" 550, "WONK" 0, "opsz" 10;
+	text-align: center;
+	width: 750px;
+}

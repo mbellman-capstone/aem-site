@@ -9,6 +9,15 @@
 			"description": "Thousands of standards-aligned, nonfiction articles<br>designed to be understood by early elementary learners.",
 			"color": "#8DF1FF",
 			"graphic": "./assets/sea-turtle.png"
+		},
+		{
+			"component": "product-preview",
+			"image": "./assets/product-pgo.png"
+		},
+		{
+			"component": "product-tagline",
+			"icon": "./assets/pgo-magnifying-glass.svg",
+			"tagline": "K-2 kids are curious about the world, where can they go to explore it?"
 		}
 	]
 }

@@ -52,6 +52,7 @@
 	content: "";
 	height: 15vw;
 	left: -25vw;
+	pointer-events: none;
 	position: absolute;
 	width: 150vw;
 }
