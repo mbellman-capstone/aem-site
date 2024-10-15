@@ -60,7 +60,12 @@
 				"url": "#",
 				"text": "Class Projects & Teacher Tools"
 			}
-		]
+		],
+		"moreQuestionsTitle": "Still have questions?",
+		"linkText1": "FAQs Page",
+		"linkUrl1": "#",
+		"linkText2": "Contact Us",
+		"linkUrl2": "#"
 	},
 	"components": []
 }

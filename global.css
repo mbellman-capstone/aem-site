@@ -39,13 +39,14 @@ body {
 	font-variation-settings: "wdth" 100;
 	font-weight: 500;
 	padding: 15px 30px;
+	text-decoration: none;
 	transition: all 0.4s cubic-bezier(.08,1.99,.83,.67);
 	width: fit-content;
 }
 
 .c-button:hover {
 	filter: brightness(110%);
-	padding: 15px 35px;
+	transform: scale(1.05);
 }
 
 .c-button:active {
