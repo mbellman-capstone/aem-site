@@ -39,7 +39,7 @@ app.get("/*", (req, res, next) => {
 	}).join("");
 
 	let templateMarkup = fs
-		.readFileSync(`./templates/${template}/template.html`)
+		.readFileSync(`./templates/markup/${template}.html`)
 		.toString()
 		.replace("{{content}}", contentMarkup);
 
