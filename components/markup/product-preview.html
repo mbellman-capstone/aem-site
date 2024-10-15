@@ -1,4 +1,17 @@
 <div class="c-product-preview">
+	<script>
+		function updateGraphic() {
+			var scrollTop = window.pageYOffset;
+			var graphic = document.querySelector(".c-product-preview__graphic");
+			var bounds = graphic.getBoundingClientRect();
+			var centerOffset = Math.max(0, (bounds.top + bounds.height / 2) - window.innerHeight / 2);
+
+			graphic.style.transform = `scale(${1 - centerOffset * 0.0001}) translateY(${centerOffset * 0.1}px)`;
+		}
+
+		window.addEventListener("load", updateGraphic);
+		window.addEventListener("scroll", updateGraphic);
+	</script>
 	<div class="c-product-preview__graphic">
 		<img src="{{image}}">
 	</div>

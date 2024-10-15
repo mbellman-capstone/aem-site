@@ -23,6 +23,18 @@
 			"component": "product-info",
 			"text": "Your K-2 kids have questions about the world. Questions about their latest favorite animal, somehow even more obscure than the last (what do axolotls eat for breakfast?), and important-but-trickier questions like ‘How do I stand up for a friend?’<br><br>PebbleGo is the place where kids go to confidently discover the world, and where educators start the valuable work of helping them make sense of it.",
 			"graphic": "./assets/kid-and-teacher-with-computer.png"
+		},
+		{
+			"component": "product-purpose",
+			"graphic": "./assets/kid-screen.svg",
+			"title": "For Kids",
+			"description": "PebbleGo provides a whole world of information specifically designed to be relevant and engaging for kids, making it the perfect place for independent exploration."
+		},
+		{
+			"component": "product-purpose",
+			"graphic": "./assets/kid-screen.svg",
+			"title": "For Educators",
+			"description": "PebbleGo is a crucial starting point for student inquiry and discovery, a place where they can confidently introduce a new topic, trusting that all the information has been designed to be understood by K-2 kids."
 		}
 	]
 }

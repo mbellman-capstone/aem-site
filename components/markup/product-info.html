@@ -1,4 +1,15 @@
 <div class="c-product-info">
+	<script>
+		window.addEventListener("scroll", function() {
+			var image = document.querySelector(".c-product-info__graphic img");
+			var bounds = image.getBoundingClientRect();
+			var center = bounds.top + bounds.height / 2;
+			var centerOffset = center - window.innerHeight / 2;
+
+			image.style.opacity = 1 - (0.001 * Math.abs(centerOffset));
+			image.style.transform = `translateY(${-0.1 * centerOffset}px)`;
+		});
+	</script>
 	<p class="c-product-info__text">
 		{{text}}
 	</p>
