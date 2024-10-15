@@ -26,7 +26,7 @@ app.get("/*", (req, res, next) => {
 	// Generate markup for all components (content)
 	const contentMarkup = components.map(({ component, ...options }) => {
 		let componentMarkup = fs
-			.readFileSync(`./components/${component}/component.html`)
+			.readFileSync(`./components/markup/${component}.html`)
 			.toString();
 
 		for (const key in options) {
