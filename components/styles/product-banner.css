@@ -31,7 +31,7 @@
 
 .c-product-banner__content {
 	animation: fade-in 0.5s linear forwards;
-	animation-delay: 0.2s;
+	animation-delay: 0.1s;
 	color: #fff;
 	display: flex;
 	margin: 0 auto;

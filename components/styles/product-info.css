@@ -1,0 +1,24 @@
+.c-product-info {
+	align-items: center;
+	display: flex;
+	margin: 80px auto;
+	position: relative;
+	width: 900px;
+}
+
+.c-product-info__text {
+	color: #5F6368;
+	font-family: "Fredoka", sans-serif;
+	font-variation-settings: "wght" 350;
+	line-height: 24px;
+	width: 50%;
+}
+
+.c-product-info__graphic {
+	position: relative;
+	width: 50%;
+}
+
+.c-product-info__graphic img {
+	width: 100%;
+}
