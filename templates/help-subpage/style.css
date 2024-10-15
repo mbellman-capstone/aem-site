@@ -1,0 +1,47 @@
+.c-help-subpage-main {
+	background-color: #fff;
+	margin-bottom: 100px;
+	padding-top: 100px;
+}
+
+/**
+ * Short Banner
+ * ------------
+ */
+.c-short-banner {
+	align-items: center;
+	display: flex;
+	height: 400px;
+	justify-content: center;
+	position: relative;
+}
+
+.c-short-banner img {
+	height: auto;
+	min-height: 400px;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.c-short-banner::after {
+	background-color: transparent;
+	border-radius: 50%;
+	bottom: 0;
+	box-shadow: 0 52px 0 50px #fff;
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	pointer-events: none;
+	position: absolute;
+	width: 150vw;
+}
+
+.c-short-banner__title {
+	color: #fff;
+	font-size: 4.5vw;
+	font-variation-settings: "wght" 700, "WONK" 0, "opsz" 10;
+	margin-top: 0;
+	position: relative;
+}

@@ -12,7 +12,7 @@ function transformDataArrayElement(element) {
 }
 
 app.get("/*", (req, res, next) => {
-	if (req.path.includes(".")) {
+	if (req.path.includes(".") || req.path.includes("%7B") || req.path.includes("%7D")) {
 		return next();
 	}
 

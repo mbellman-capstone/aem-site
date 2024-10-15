@@ -1,0 +1,8 @@
+{
+	"template": "help-subpage",
+	"data": {
+		"title": "Supported Funding",
+		"background": "./assets/kids-with-goggles.png"
+	},
+	"components": []
+}
