@@ -32,9 +32,34 @@
 		},
 		{
 			"component": "product-purpose",
-			"graphic": "./assets/kid-screen.svg",
+			"graphic": "./assets/id-card.svg",
 			"title": "For Educators",
 			"description": "PebbleGo is a crucial starting point for student inquiry and discovery, a place where they can confidently introduce a new topic, trusting that all the information has been designed to be understood by K-2 kids."
+		},
+		{
+			"component": "button-link",
+			"text": "Explore Topics",
+			"url": "#"
+		},
+		{
+			"component": "pebblego-links",
+			"title": "What else can PebbleGo do for you?",
+			"icon1": "./assets/pgo-icon.svg",
+			"title1": "PebbleGo",
+			"description1": "Make it easy to introduce new terms and concepts.",
+			"url1": "#",
+			"icon2": "./assets/pgn-icon.svg",
+			"title2": "PebbleGo Next",
+			"description2": "Equip upper elementary learners for deeper, independent exploration.",
+			"url2": "#",
+			"icon3": "./assets/ebooks-icon.svg",
+			"title3": "eBooks",
+			"description3": "Bring academic concepts to life through the power of story.",
+			"url3": "#",
+			"icon4": "./assets/digital-tools-icon.svg",
+			"title4": "Digital Tools",
+			"description4": "Provide a creative space for planning lessons and demonstrating learning.",
+			"url4": "#"
 		}
 	]
 }
