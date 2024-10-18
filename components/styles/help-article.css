@@ -21,7 +21,7 @@
 
 .c-help-article__banner img {
 	height: auto;
-	min-height: 400px;
+	min-height: 300px;
 	object-fit: cover;
 	position: absolute;
 	top: 0;
@@ -69,6 +69,8 @@
 .c-help-article__video-description {
 	font-size: 28px;
 	margin-top: 40px;
+	max-width: 1000px;
+	text-align: center;
 }
 
 .c-help-article__section-title {
@@ -93,12 +95,8 @@
 .c-help-article__step {
 	font-size: 24px;
 	font-variation-settings: "wght" 350, "opsz" 10;
-	margin: 30px 0;
+	margin: 30px 0 90px;
 	width: 630px;
-}
-
-.c-help-article__base {
-	margin-top: 100px;
 }
 
 .c-help-article__base-title {

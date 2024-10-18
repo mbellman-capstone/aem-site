@@ -4,6 +4,7 @@
 		{
 			"component": "help-article",
 			"title": "How to Share Direct Links to PebbleGo Articles",
+			"bannerBackground": "./assets/purple-sky.png",
 			"videoDescription": "Watch this video tutorial on sharing direct links to PebbleGo content",
 			"sectionTitle": "Section Title if needed",
 			"moreQuestionsTitle": "Still have questions?",
