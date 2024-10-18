@@ -1,15 +1,4 @@
-<div class="c-activity-preview ${properties.direction}">
-	<script>
-		window.addEventListener("scroll", function() {
-			var image = document.getElementById("image-${properties.id}");
-			var bounds = image.getBoundingClientRect();
-			var center = bounds.top + bounds.height / 2;
-			var centerOffset = center - window.innerHeight / 2;
-
-			image.style.opacity = 1 - (0.001 * Math.abs(centerOffset));
-			image.style.transform = `translateY(${-0.15 * centerOffset}px)`;
-		});
-	</script>
+<div class="c-activity-preview ${properties.direction}" data-cmp-is="activity-preview">
 	<div class="c-activity-preview__description">
 		<h2 class="c-activity-preview__title">
 			${properties.title}
@@ -17,7 +6,7 @@
 		<p class="c-activity-preview__text">
 			${properties.text}
 		</p>
-		<button class="c-button c-activity-preview__button" style="background-color: ${properties.color};">
+		<button class="c-button c-activity-preview__button" data-color="${properties.color}">
 			${properties.buttonText}
 
 			<svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,6 +16,6 @@
 		</button>
 	</div>
 	<div class="c-activity-preview__image">
-		<img src="${properties.image}" id="image-${properties.id}">
+		<img src="${properties.image}">
 	</div>
 </div>

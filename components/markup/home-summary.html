@@ -1,22 +1,11 @@
-<div class="c-home-summary">
-	<script>
-		window.addEventListener("scroll", function() {
-			var scrollTop = window.pageYOffset;
-			var animal = document.querySelector('.c-home-summary__animal');
-			var bounds = animal.getBoundingClientRect();
-			var pageCenter = window.innerHeight / 2;
-			var centerOffset = pageCenter - (bounds.top + bounds.height / 2);
-
-			animal.style.transform = `translateY(${-centerOffset * 0.05}px)`;
-		});
-	</script>
+<div class="c-home-summary" data-cmp-is="home-summary">
 	<h1 class="c-home-summary__title">
 		${properties.title}
 	</h1>
 	<div class="c-home-summary__content">
 		<div class="c-home-summary__image-container">
 			<img class="c-home-summary__graphic" src="${properties.graphic}">
-		<img class="c-home-summary__animal" src="${properties.animalGraphic}">
+			<img class="c-home-summary__animal" src="${properties.animalGraphic}">
 		</div>
 		<div class="c-home-summary__text">
 			<div>1,660,000,000</div>
