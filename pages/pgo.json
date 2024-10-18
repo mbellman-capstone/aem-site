@@ -3,6 +3,7 @@
 	"components": [
 		{
 			"component": "product-banner",
+			"bannerBackground": "./assets/pgo-banner.png",
 			"title": "PebbleGo",
 			"tagline": "Where K-2 kids go to make sense<br>of the world around them",
 			"buttonText": "Preview PebbleGo",

@@ -1,4 +1,4 @@
-<div class="c-product-banner">
+<div class="c-product-banner" data-cmp-is="product-banner">
 	<script>
 		window.addEventListener("scroll", function() {
 			var scrollTop = window.pageYOffset;
@@ -10,28 +10,28 @@
 		});
 	</script>
 
-	<div class="c-product-banner__background" id="banner-1-background">
-		<img src="/assets/pgo-banner.png" id="banner-1-image" />
+	<div class="c-product-banner__background">
+		<img src="${properties.bannerBackground}">
 	</div>
 
 	<div class="c-product-banner__content">
 		<div class="c-product-banner__text">
 			<h1 class="c-product-banner__title">
-				{{title}}
+				${properties.title}
 			</h1>
 			<p class="c-product-banner__tagline">
-				{{tagline}}
+				${properties.tagline}
 			</p>
-			<button class="c-button c-product-banner__button" style="background-color: {{color}};">
-				{{buttonText}}
+			<button class="c-button c-product-banner__button" style="background-color: ${properties.color};">
+				${properties.buttonText}
 			</button>
 			<p class="c-product-banner__description">
-				{{description}}
+				${properties.description}
 			</p>
 		</div>
 	</div>
 
 	<div class="c-product-banner__graphic">
-		<img src="{{graphic}}">
+		<img src="${properties.graphic}">
 	</div>
 </div>

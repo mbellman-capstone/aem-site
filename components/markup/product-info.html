@@ -1,4 +1,4 @@
-<div class="c-product-info">
+<div class="c-product-info" data-cmp-is="product-info">
 	<script>
 		window.addEventListener("scroll", function() {
 			var image = document.querySelector(".c-product-info__graphic img");
@@ -11,9 +11,9 @@
 		});
 	</script>
 	<p class="c-product-info__text">
-		{{text}}
+		${properties.text}
 	</p>
 	<div class="c-product-info__graphic">
-		<img src="{{graphic}}">
+		<img src="${properties.graphic}">
 	</div>
 </div>
