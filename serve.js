@@ -32,7 +32,7 @@ app.get("/*", (req, res, next) => {
 		for (const key in options) {
 			const value = options[key];
 
-			componentMarkup = componentMarkup.replace(new RegExp(`{{${key}}}`, "g"), value);
+			componentMarkup = componentMarkup.replace(new RegExp(`\\\${properties.${key}}`, "g"), value);
 		}
 
 		return componentMarkup;

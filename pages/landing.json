@@ -3,10 +3,16 @@
 	"components": [
 		{
 			"component": "home-banner",
-			"text": "We help <span>elementary</span> kids make sense of the world"
+			"background": "./assets/purple-sky.png",
+			"text": "We help <span>elementary</span> kids make sense of the world",
+			"graphic": "./assets/girl-with-screen.png",
+			"moonImage": "./assets/moon.png"
 		},
 		{
-			"component": "home-summary"
+			"component": "home-summary",
+			"title": "The <span>POWER</span> of <span>PebbleGo</span>",
+			"graphic": "./assets/pebblego-devices.png",
+			"animalGraphic": "./assets/axolotl.png"
 		},
 		{
 			"component": "activity-preview",
@@ -49,10 +55,19 @@
 			"image": "./assets/woman-smiling.png"
 		},
 		{
-			"component": "recognition"
+			"component": "recognition",
+			"bannerTitle": "Recognition",
+			"quote1": "If you want a resource that engages all students in independent learning and has them saying how much they love using it at home an at school, then there is no better option out there for K-3.",
+			"attribution1": "<span>Jennifer Sturge,</span> Calvert County Public Schools",
+			"awardGraphic1": "./assets/aasl-logo.png",
+			"awardGraphic2": "./assets/edtech-logo.png",
+			"awardGraphic3": "./assets/tech-learning-aoe.png",
+			"awardGraphic4": "./assets/tech-learning-bos.png"
 		},
 		{
-			"component": "newsletter-promo"
+			"component": "newsletter-promo",
+			"buttonText": "Stay in Touch",
+			"text": "Our monthly PebbleGo Pulse newsletter includes the latest and greatest from PebbleGo—teacher and librarian-led inspiration and activities, calendars, and other downloadables."
 		}
 	]
 }
