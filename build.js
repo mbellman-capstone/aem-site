@@ -123,5 +123,5 @@ for (const filename of styleFiles) {
 // Add scripts
 //
 for (const filename of scriptFiles) {
-	fs.copyFileSync(`components/scripts/${filename}`, `aem-build/clientlibs/_${filename}`);
+	fs.copyFileSync(`components/scripts/${filename}`, `aem-build/clientlibs/${filename}`);
 }

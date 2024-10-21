@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node serve.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf aem-build && node build.js"
+    "build": "rm -rf aem-build && node build.js",
+    "export": "node export.js"
   },
   "author": "",
   "license": "ISC",
