@@ -25,6 +25,27 @@
 
 						image.style.transform = `translateY(${scrollTop * 0.5}px)`;
 					});
+
+					// Format content
+					var contentContainer = document.querySelector(".c-help-article__content");
+					var content = contentContainer.getAttribute("data-content");
+
+					var formattedContent = content
+						.split("\n")
+						.map(function(line) {
+							if (line.startsWith("@image")) {
+								var path = line.split(" ").pop();
+
+								return `<div class="c-help-article__image"><img src=${path}></div>`;
+							} else if (line.length > 0) {
+								return `<div class="c-help-article__step">${line}</div>`;
+							} else {
+								return "";
+							}
+						})
+						.join("<br>");
+
+					contentContainer.innerHTML = formattedContent;
 			}
 
 			if (config && config.element) {

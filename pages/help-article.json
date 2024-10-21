@@ -7,13 +7,12 @@
 			"bannerBackground": "./assets/purple-sky.png",
 			"videoDescription": "Watch this video tutorial on sharing direct links to PebbleGo content",
 			"sectionTitle": "Section Title if needed",
+			"content": "@image ./assets/kids-with-computer.png\n\nStep 1: Navigate within PebbleGo to the category or article you want to share.\n\nStep 2: Click the Tools and Settings gear in the upper right corner, then select the “Copy Link” button.\n\n@image ./assets/sea-turtle.png",
 			"moreQuestionsTitle": "Still have questions?",
 			"faqsText": "FAQs Page",
 			"faqsUrl": "#",
 			"contactText": "Contact Us",
-			"contactUrl": "#",
-			"image1": "https://i.pinimg.com/736x/db/be/66/dbbe66fde4c9e17fac307e8e4d005f2b.jpg",
-			"step1": "Step 1: Navigate within PebbleGo to the category or article you want to share."
+			"contactUrl": "#"
 		}
 	]
 }

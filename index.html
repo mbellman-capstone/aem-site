@@ -35,6 +35,16 @@
 		<script type="text/javascript" src="./components/scripts/product-banner.js"></script>
 		<script type="text/javascript" src="./components/scripts/product-info.js"></script>
 		<script type="text/javascript" src="./components/scripts/product-preview.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				setTimeout(() => {
+					if (window.scrollX > 0) {
+						window.scrollTo(0, window.scrollY);
+					}
+				}, 50);
+			});
+		</script>
 	</head>
 	<body>
 		{{template}}
