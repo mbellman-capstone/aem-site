@@ -48,8 +48,9 @@
                         name="./title2"/>
                     <description2
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description2"
+                        emptyText="Description2"
                         name="./description2"/>
                     <url2
                         jcr:primaryType="nt:unstructured"
@@ -68,8 +69,9 @@
                         name="./title3"/>
                     <description3
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description3"
+                        emptyText="Description3"
                         name="./description3"/>
                     <url3
                         jcr:primaryType="nt:unstructured"
@@ -88,8 +90,9 @@
                         name="./title4"/>
                     <description4
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description4"
+                        emptyText="Description4"
                         name="./description4"/>
                     <url4
                         jcr:primaryType="nt:unstructured"

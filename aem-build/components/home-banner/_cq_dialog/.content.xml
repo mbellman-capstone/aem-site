@@ -18,8 +18,9 @@
                         name="./background"/>
                     <text
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Text"
+                        emptyText="Text"
                         name="./text"/>
                     <graphic
                         jcr:primaryType="nt:unstructured"

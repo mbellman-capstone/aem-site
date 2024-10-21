@@ -28,6 +28,12 @@
 						image.style.opacity = 1 - (0.001 * Math.abs(centerOffset));
 						image.style.transform = `translateY(${-0.1 * centerOffset}px)`;
 					});
+
+					// Apply text wrapping/formatting
+					var text = root.querySelector(".c-product-info__text");
+					var content = text.getAttribute("data-content");
+
+					text.innerHTML = content.replace(/\n/g, "<br>");
 			}
 
 			if (config && config.element) {

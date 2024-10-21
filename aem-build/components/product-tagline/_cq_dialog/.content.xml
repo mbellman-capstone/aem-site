@@ -18,8 +18,9 @@
                         name="./icon"/>
                     <tagline
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Tagline"
+                        emptyText="Tagline"
                         name="./tagline"/>
                 </items>
             </column>

@@ -5,9 +5,9 @@
 			"component": "product-banner",
 			"bannerBackground": "./assets/pgo-banner.png",
 			"title": "PebbleGo",
-			"tagline": "Where K-2 kids go to make sense<br>of the world around them",
+			"tagline": "Where K-2 kids go to make sense\nof the world around them",
 			"buttonText": "Preview PebbleGo",
-			"description": "Thousands of standards-aligned, nonfiction articles<br>designed to be understood by early elementary learners.",
+			"description": "Thousands of standards-aligned, nonfiction articles\ndesigned to be understood by early elementary learners.",
 			"color": "#8DF1FF",
 			"graphic": "./assets/sea-turtle.png"
 		},
@@ -22,7 +22,7 @@
 		},
 		{
 			"component": "product-info",
-			"text": "Your K-2 kids have questions about the world. Questions about their latest favorite animal, somehow even more obscure than the last (what do axolotls eat for breakfast?), and important-but-trickier questions like ‘How do I stand up for a friend?’<br><br>PebbleGo is the place where kids go to confidently discover the world, and where educators start the valuable work of helping them make sense of it.",
+			"text": "Your K-2 kids have questions about the world. Questions about their latest favorite animal, somehow even more obscure than the last (what do axolotls eat for breakfast?), and important-but-trickier questions like ‘How do I stand up for a friend?’\n\nPebbleGo is the place where kids go to confidently discover the world, and where educators start the valuable work of helping them make sense of it.",
 			"graphic": "./assets/kid-and-teacher-with-computer.png"
 		},
 		{

@@ -33,6 +33,15 @@
 					var color = button.getAttribute("data-color");
 
 					button.style.backgroundColor = color;
+
+					// Apply text wrapping
+					var tagline = root.querySelector(".c-product-banner__tagline");
+					var description = root.querySelector(".c-product-banner__description");
+					var taglineContent = tagline.getAttribute("data-content");
+					var descriptionContent = description.getAttribute("data-content");
+
+					tagline.innerHTML = taglineContent.replace(/\n/g, "<br>");
+					description.innerHTML = descriptionContent.replace(/\n/g, "<br>");
 			}
 
 			if (config && config.element) {
