@@ -27,6 +27,12 @@
 						image.style.transform = `translateY(${scrollTop * 0.7}px`;
 						graphic.style.transform = `translateX(${scrollTop * 0.2}px)`;
 					});
+
+					// Set button color
+					var button = root.querySelector(".c-product-banner__button");
+					var color = button.getAttribute("data-color");
+
+					button.style.backgroundColor = color;
 			}
 
 			if (config && config.element) {
