@@ -3,9 +3,9 @@ const fs = require("fs");
 //
 // Create target directories
 //
-fs.mkdirSync("aem-dist");
-fs.mkdirSync("aem-dist/components");
-fs.mkdirSync("aem-dist/clientlibs");
+fs.mkdirSync("aem-build");
+fs.mkdirSync("aem-build/components");
+fs.mkdirSync("aem-build/clientlibs");
 
 const markupFiles = fs.readdirSync("components/markup");
 const styleFiles = fs.readdirSync("components/styles");
@@ -28,11 +28,11 @@ for (const filename of markupFiles) {
     jcr:title="${componentDisplayName} Component"
     componentGroup="pebblegodev - Content"/>`;
 
-	fs.mkdirSync(`aem-dist/components/${componentName}`);
-	fs.mkdirSync(`aem-dist/components/${componentName}/_cq_dialog`);
+	fs.mkdirSync(`aem-build/components/${componentName}`);
+	fs.mkdirSync(`aem-build/components/${componentName}/_cq_dialog`);
 
-	fs.copyFileSync(`components/markup/${filename}`, `aem-dist/components/${componentName}/${filename}`);
-	fs.writeFileSync(`aem-dist/components/${componentName}/.content.xml`, contentXml);
+	fs.copyFileSync(`components/markup/${filename}`, `aem-build/components/${componentName}/${filename}`);
+	fs.writeFileSync(`aem-build/components/${componentName}/.content.xml`, contentXml);
 }
 
 //
@@ -55,7 +55,7 @@ for (const file of pageFiles) {
 // Using each unique component example, build the dialog XML structure
 //
 for (const { component: componentName, ...properties } of uniqueComponentExamples) {
-	const targetFilename = `aem-dist/components/${componentName}/_cq_dialog/.content.xml`;
+	const targetFilename = `aem-build/components/${componentName}/_cq_dialog/.content.xml`;
 
 	// Build the lineup of editor fields using the example properties
 	const editableFieldsContentXml = Object.keys(properties)
@@ -116,12 +116,12 @@ ${editableFieldsContentXml}
 // Add stylesheets
 //
 for (const filename of styleFiles) {
-	fs.copyFileSync(`components/styles/${filename}`, `aem-dist/clientlibs/_${filename.replace(".css", ".scss")}`)
+	fs.copyFileSync(`components/styles/${filename}`, `aem-build/clientlibs/_${filename.replace(".css", ".scss")}`)
 }
 
 //
 // Add scripts
 //
 for (const filename of scriptFiles) {
-	fs.copyFileSync(`components/scripts/${filename}`, `aem-dist/clientlibs/_${filename}`);
+	fs.copyFileSync(`components/scripts/${filename}`, `aem-build/clientlibs/_${filename}`);
 }

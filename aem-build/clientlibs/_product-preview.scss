@@ -1,0 +1,32 @@
+.c-product-preview {
+	background-color: #fff;
+	display: flex;
+	padding: 100px 0 0;
+	position: relative;
+	width: 100%;
+}
+
+.c-product-preview::after {
+	background-color: #f5f5f5;
+	border-radius: 50%;
+	bottom: -3.5vw;
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	pointer-events: none;
+	position: absolute;
+	width: 150vw;
+}
+
+.c-product-preview__graphic {
+	display: flex;
+	margin: 0 auto;
+	position: relative;
+	width: 940px;
+	z-index: 2;
+}
+
+.c-product-preview img {
+	height: auto;
+	width: 100%;
+}

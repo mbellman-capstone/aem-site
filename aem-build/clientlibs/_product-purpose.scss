@@ -1,0 +1,27 @@
+.c-product-purpose {
+	align-items: center;
+	display: flex;
+	margin: 0 auto 50px;
+	position: relative;
+	width: 600px;
+}
+
+.c-product-purpose__icon {
+	margin-right: 30px;
+}
+
+.c-product-purpose__icon img {
+	width: 115px;
+}
+
+.c-product-purpose__title {
+	font-size: 40px;
+	font-variation-settings: "wght" 600, "opsz" 10;
+	margin: 0 0 20px;
+}
+
+.c-product-purpose__description {
+	color: #5F6368;
+	font-family: "Fredoka", sans-serif;
+	font-variation-settings: "wght" 350;
+}

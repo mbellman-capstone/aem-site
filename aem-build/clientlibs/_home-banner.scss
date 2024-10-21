@@ -1,0 +1,152 @@
+@keyframes rocket-flame-pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes rocket-sparkle {
+	0% {
+		opacity: 0;
+		transform: translate(0, 0) rotate(0deg);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(2vw, 5vw) rotate(30deg);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(4vw, 10vw) rotate(60deg);
+	}
+}
+
+.c-home-banner {
+	display: flex;
+	height: 39vw;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.c-home-banner::after {
+	background-color: #fff;
+	border-radius: 50%;
+	bottom: -11.5vw;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	pointer-events: none;
+	position: absolute;
+	width: 150vw;
+}
+
+.c-home-banner__background {
+	position: absolute;
+}
+
+.c-home-banner__background img {
+	position: relative;
+	width: 100%;
+}
+
+.c-home-banner__moon {
+	left: 25%;
+	opacity: 0.7;
+	position: absolute;
+	top: 2%;
+	width: 6%;
+}
+
+.c-home-banner__moon img {
+	width: 100%;
+}
+
+.c-home-banner__rocket-ship {
+	position: absolute;
+	left: 5%;
+	bottom: 20%;
+}
+
+svg.c-home-banner__rocket {
+	width: 8vw;
+	height: 8vw;
+}
+
+svg.c-home-banner__rocket path:first-child {
+	animation: rocket-flame-pulse 0.5s linear infinite;
+	transform-origin: 50% 50%;
+}
+
+.c-home-banner__sparkles {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.c-home-banner__rocket-ship.flying .c-home-banner__sparkles {
+	opacity: 1;
+}
+
+svg.c-home-banner__sparkle:nth-of-type(1) {
+	animation: rocket-sparkle 1s linear forwards infinite;
+	height: 2vw;
+	left: 40%;
+	opacity: 0;
+	position: absolute;
+	top: 70%;
+	width: 2vw;
+}
+
+svg.c-home-banner__sparkle:nth-of-type(2) {
+	animation: rocket-sparkle 1.2s linear forwards infinite;
+	animation-delay: 0.5s;
+	height: 1.6vw;
+	left: 60%;
+	opacity: 0;
+	position: absolute;
+	top: 70%;
+	width: 1.6vw;
+}
+
+.c-home-banner__content {
+	display: flex;
+	margin: 0 0 0 10%;
+	position: relative;
+}
+
+.c-home-banner__text {
+	animation: fade-in 0.5s linear forwards;
+	animation-delay: 0.2s;
+	color: #fff;
+	font-size: 4.5vw;
+	margin-top: 8%;
+	opacity: 0;
+	text-align: center;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	width: 40%;
+}
+
+.c-home-banner__text span {
+	color: #C0FF76;
+	font-family: "Fredoka", sans-serif;
+	font-variation-settings: "wght" 500;
+}
+
+.c-home-banner__image {
+	align-items: flex-start;
+	display: flex;
+	height: auto;
+	justify-content: center;
+	margin-top: 3%;
+	width: 60%;
+}
+
+.c-home-banner__image img {
+	position: relative;
+	width: 90%;
+}
