@@ -6,10 +6,10 @@
 	// but use dedicated data attributes to identify all elements that the script needs to
 	// interact with.
 	var selectors = {
-			self:      '[data-cmp-is="home-summary"]'
+			self:      '[data-cmp-is="home-banner"]'
 	};
 
-	function HomeSummary(config) {
+	function HomeBanner(config) {
 
 			function init(config) {
 					var root = config.element;
@@ -20,12 +20,20 @@
 					root.removeAttribute("data-cmp-is");
 
 					window.addEventListener("scroll", function() {
-						var animal = root.querySelector('.c-home-summary__animal');
-						var bounds = animal.getBoundingClientRect();
-						var pageCenter = window.innerHeight / 2;
-						var centerOffset = pageCenter - (bounds.top + bounds.height / 2);
+						var scrollTop = window.scrollY;
+						var image = root.querySelector('.c-home-banner__background img');
+						var moon = root.querySelector('.c-home-banner__moon');
+						var rocketShip = root.querySelector('.c-home-banner__rocket-ship');
 			
-						animal.style.transform = `translateY(${-centerOffset * 0.05}px)`;
+						image.style.transform = `translateY(${scrollTop * 0.8}px)`;
+						moon.style.transform = `translateY(${scrollTop * 0.3}px)`;
+						rocketShip.style.transform = `translate(${-scrollTop * 0.15}px, ${-scrollTop * 0.3}px)`;
+			
+						if (scrollTop > 100) {
+							rocketShip.classList.add('flying');
+						} else {
+							rocketShip.classList.remove('flying');
+						}
 					});
 			}
 
@@ -40,7 +48,7 @@
 	function onDocumentReady() {
 			var elements = document.querySelectorAll(selectors.self);
 			for (var i = 0; i < elements.length; i++) {
-					new HomeSummary({ element: elements[i] });
+					new HomeBanner({ element: elements[i] });
 			}
 
 			var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
@@ -54,7 +62,7 @@
 											if (addedNode.querySelectorAll) {
 													var elementsArray = [].slice.call(addedNode.querySelectorAll(selectors.self));
 													elementsArray.forEach(function(element) {
-															new HomeSummary({ element: element });
+															new HomeBanner({ element: element });
 													});
 											}
 									});

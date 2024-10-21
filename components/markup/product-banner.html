@@ -1,15 +1,4 @@
 <div class="c-product-banner" data-cmp-is="product-banner">
-	<script>
-		window.addEventListener("scroll", function() {
-			var scrollTop = window.pageYOffset;
-			var image = document.querySelector('.c-product-banner__background img');
-			var graphic = document.querySelector('.c-product-banner__graphic img');
-
-			image.style.transform = `translateY(${scrollTop * 0.7}px`;
-			graphic.style.transform = `translateX(${scrollTop * 0.2}px)`;
-		});
-	</script>
-
 	<div class="c-product-banner__background">
 		<img src="${properties.bannerBackground}">
 	</div>

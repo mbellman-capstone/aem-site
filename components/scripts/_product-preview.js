@@ -6,10 +6,10 @@
 	// but use dedicated data attributes to identify all elements that the script needs to
 	// interact with.
 	var selectors = {
-			self:      '[data-cmp-is="home-summary"]'
+			self:      '[data-cmp-is="product-preview"]'
 	};
 
-	function HomeSummary(config) {
+	function ProductPreview(config) {
 
 			function init(config) {
 					var root = config.element;
@@ -19,14 +19,17 @@
 					// identified the component.
 					root.removeAttribute("data-cmp-is");
 
-					window.addEventListener("scroll", function() {
-						var animal = root.querySelector('.c-home-summary__animal');
-						var bounds = animal.getBoundingClientRect();
-						var pageCenter = window.innerHeight / 2;
-						var centerOffset = pageCenter - (bounds.top + bounds.height / 2);
+					function updateGraphic() {
+						var graphic = root.querySelector(".c-product-preview__graphic");
+						var bounds = graphic.getBoundingClientRect();
+						var centerOffset = Math.max(0, (bounds.top + bounds.height / 2) - window.innerHeight / 2);
 			
-						animal.style.transform = `translateY(${-centerOffset * 0.05}px)`;
-					});
+						graphic.style.transform = `scale(${1 - centerOffset * 0.0001}) translateY(${centerOffset * 0.1}px)`;
+					}
+
+					updateGraphic();
+			
+					window.addEventListener("scroll", updateGraphic);
 			}
 
 			if (config && config.element) {
@@ -40,7 +43,7 @@
 	function onDocumentReady() {
 			var elements = document.querySelectorAll(selectors.self);
 			for (var i = 0; i < elements.length; i++) {
-					new HomeSummary({ element: elements[i] });
+					new ProductPreview({ element: elements[i] });
 			}
 
 			var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
@@ -54,7 +57,7 @@
 											if (addedNode.querySelectorAll) {
 													var elementsArray = [].slice.call(addedNode.querySelectorAll(selectors.self));
 													elementsArray.forEach(function(element) {
-															new HomeSummary({ element: element });
+															new ProductPreview({ element: element });
 													});
 											}
 									});

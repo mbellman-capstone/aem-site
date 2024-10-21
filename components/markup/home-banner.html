@@ -1,24 +1,6 @@
-<div class="c-home-banner">
-	<script>
-		window.addEventListener("scroll", function() {
-			var scrollTop = window.pageYOffset;
-			var image = document.getElementById('banner-1-image');
-			var moon = document.querySelector('.c-home-banner__moon');
-			var rocketShip = document.querySelector('.c-home-banner__rocket-ship');
-
-			image.style.transform = `translateY(${scrollTop * 0.8}px)`;
-			moon.style.transform = `translateY(${scrollTop * 0.3}px)`;
-			rocketShip.style.transform = `translate(${-scrollTop * 0.15}px, ${-scrollTop * 0.3}px)`;
-
-			if (scrollTop > 100) {
-				rocketShip.classList.add('flying');
-			} else {
-				rocketShip.classList.remove('flying');
-			}
-		});
-	</script>
-	<div class="c-home-banner__background" id="banner-1-background">
-		<img src="${properties.background}" id="banner-1-image">
+<div class="c-home-banner" data-cmp-is="home-banner">
+	<div class="c-home-banner__background">
+		<img src="${properties.background}">
 
 		<div class="c-home-banner__moon">
 			<img src="${properties.moonImage}">
