@@ -34,8 +34,9 @@
                         name="./sectionTitle"/>
                     <content
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Content"
+                        emptyText="Content"
                         name="./content"/>
                     <moreQuestionsTitle
                         jcr:primaryType="nt:unstructured"

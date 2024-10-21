@@ -61,7 +61,7 @@ for (const { component: componentName, ...properties } of uniqueComponentExample
   const editableFieldsContentXml = Object.keys(properties)
     .map(key => {
       const value = properties[key];
-      const isImage = /.(png|jpg|jpeg|svg)$/.test(value);
+      const isImage = /.(png|jpg|jpeg|svg)$/.test(value) && !/\n/.test(value);
 
       // Fudge the property name into an appropriate display format.
       // E.g. "backgroundImage" -> "Background image"
