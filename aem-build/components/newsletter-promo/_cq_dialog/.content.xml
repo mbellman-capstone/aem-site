@@ -18,8 +18,8 @@
                         name="./buttonText"/>
                     <text
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Text"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        emptyText="Text"
                         name="./text"/>
                 </items>
             </column>

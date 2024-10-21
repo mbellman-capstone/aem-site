@@ -15,6 +15,7 @@ body {
 	background-color: #f5f5f5;
 	font-family: "Fraunces", serif;
 	font-variation-settings: "opsz" var(--opsz), "wght" var(--wght), "SOFT" var(--SOFT), "WONK" var(--WONK);
+	line-height: normal;
 	margin: 0;
 	overflow-x: hidden;
 	--SOFT: 70;

@@ -18,8 +18,8 @@
                         name="./bannerTitle"/>
                     <quote1
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Quote1"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        emptyText="Quote1"
                         name="./quote1"/>
                     <attribution1
                         jcr:primaryType="nt:unstructured"

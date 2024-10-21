@@ -63,11 +63,6 @@ for (const { component: componentName, ...properties } of uniqueComponentExample
 			const value = properties[key];
 			const isImage = /.(png|jpg|jpeg|svg)$/.test(value);
 
-			// For images, use the "pathbrowser" resource. Otherwise use "textfield".
-			const resourceType = isImage
-				? "granite/ui/components/foundation/form/pathbrowser"
-				: "granite/ui/components/coral/foundation/form/textfield";
-
 			// Fudge the property name into an appropriate display format.
 			// E.g. "backgroundImage" -> "Background image"
 			const fieldLabel = key
@@ -80,12 +75,28 @@ for (const { component: componentName, ...properties } of uniqueComponentExample
 			// Capitalize the first letter of the label
 			const finalFieldLabel = fieldLabel[0].toUpperCase() + fieldLabel.slice(1);
 
-			// Awkward spacing here is necessary to preserve tidy output indentation
-			return `                    <${key}
+			// For images, use the "pathbrowser" resource. Otherwise use "textfield" or "textarea" depending on length.
+			// Awkward spacing here is necessary to preserve tidy output indentation.
+			if (isImage) {
+				return `                    <${key}
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="${resourceType}"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                         fieldLabel="${finalFieldLabel}"
                         name="./${key}"/>`;
+			} else if (value.length > 100) {
+				return `                    <${key}
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        emptyText="${finalFieldLabel}"
+                        name="./${key}"/>`;
+			} else {
+				return `                    <${key}
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="${finalFieldLabel}"
+                        name="./${key}"/>`;
+			}
+
 		})
 		.join("\n");
 
