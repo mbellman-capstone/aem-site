@@ -1,32 +1,17 @@
-.c-product-banner {
-	display: flex;
-	height: 39vw;
-	position: relative;
-	width: 100%;
-}
-
-.c-product-banner::after {
-	background-color: transparent;
-	border-radius: 50%;
-	bottom: 0;
-	box-shadow: 0 52px 0 50px #fff;
-	content: "";
-	height: 15vw;
-	left: -25vw;
-	pointer-events: none;
-	position: absolute;
-	width: 150vw;
-}
-
 .c-product-banner__background {
 	height: 100%;
 	overflow: hidden;
 	position: absolute;
+	width: 100%;
 }
 
 .c-product-banner__background img {
-	height: 100%;
-	position: relative;
+	height: auto;
+	min-height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .c-product-banner__content {
@@ -43,23 +28,25 @@
 .c-product-banner__title {
 	font-family: "Fredoka", sans-serif;
 	font-variation-settings: "wght" 600;
-	font-size: 4.8vw;
+	font-size: 62px;
 	margin-bottom: 0;
 }
 
 .c-product-banner__tagline {
-	font-size: 3vw;
-	font-variation-settings: "wght" 600;
-	margin: 25px 0 40px;
+	font-size: 42px;
+	font-variation-settings: "wght" 600, "opsz" 10;
+	margin: 25px 0 30px;
 }
 
 .c-product-banner__description {
-	font-size: 2vw;
-	font-variation-settings: "wght" 350;
+	font-size: 24px;
+	font-variation-settings: "wght" 350, "opsz" 10;
+	margin: 15px 0 20px;
 }
 
 .c-product-banner__graphic {
 	bottom: -6vw;
+	max-width: 450px;
 	position: absolute;
 	right: 0;
 	width: 30%;

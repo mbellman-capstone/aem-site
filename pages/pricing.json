@@ -1,0 +1,9 @@
+{
+	"template": "header-footer",
+	"components": [
+		{
+			"component": "pricing-banner",
+			"background": "./assets/classroom.png"
+		}
+	]
+}

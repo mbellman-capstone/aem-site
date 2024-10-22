@@ -1,0 +1,17 @@
+.c-pricing-banner {
+	overflow: hidden;
+}
+
+.c-pricing-banner__background {
+	position: relative;
+	width: 100%;
+}
+
+.c-pricing-banner__background img {
+	height: auto;
+	min-height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
