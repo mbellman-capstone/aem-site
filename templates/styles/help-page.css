@@ -14,12 +14,8 @@
  */
 .c-support-banner {
 	align-items: center;
-	display: flex;
-	height: 312px;
 	justify-content: center;
 	overflow: hidden;
-	position: relative;
-	width: 100%;
 }
 
 .c-support-banner img {
@@ -30,24 +26,11 @@
 	width: 100%;
 }
 
-.c-support-banner::after {
-	background-color: #fff;
-	border-radius: 50%;
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
-	content: "";
-	height: 15vw;
-	left: -25vw;
-	pointer-events: none;
-	position: absolute;
-	top: calc(100% - 30px);
-	width: 150vw;
-}
-
 .c-support-banner__title {
 	color: #fff;
-	font-size: 4.5vw;
+	font-size: 54px;
 	font-variation-settings: "wght" 700, "WONK" 0, "opsz" 10;
-	margin-top: 0;
+	margin-top: -30px;
 	position: relative;
 }
 

@@ -26,24 +26,8 @@
 }
 
 .c-home-banner {
-	display: flex;
 	height: 39vw;
 	overflow: hidden;
-	position: relative;
-	width: 100%;
-}
-
-.c-home-banner::after {
-	background-color: #fff;
-	border-radius: 50%;
-	bottom: -11.5vw;
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
-	content: "";
-	height: 15vw;
-	left: -25vw;
-	pointer-events: none;
-	position: absolute;
-	width: 150vw;
 }
 
 .c-home-banner__background {

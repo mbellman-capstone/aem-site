@@ -10,13 +10,9 @@
 .c-help-article__banner {
 	background-color: #470061;
 	align-items: center;
-	display: flex;
-	height: 300px;
 	justify-content: center;
 	margin-bottom: 150px;
 	overflow: hidden;
-	position: relative;
-	width: 100%;
 }
 
 .c-help-article__banner img {
@@ -28,24 +24,11 @@
 	width: 100%;
 }
 
-.c-help-article__banner::after {
-	background-color: #fff;
-	border-radius: 50%;
-	bottom: -13vw;
-	box-shadow: 0 52px 0 50px #fff;
-	content: "";
-	height: 15vw;
-	left: -25vw;
-	pointer-events: none;
-	position: absolute;
-	width: 150vw;
-}
-
 .c-help-article__heading {
 	color: #fff;
 	font-size: 52px;
 	font-variation-settings: "wght" 700, "WONK" 0, "opsz" 10;
-	margin-top: 0;
+	margin-top: -20px;
 	position: relative;
 	text-align: center;
 	width: 1000px;

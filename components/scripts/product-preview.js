@@ -21,14 +21,14 @@
 
 					function updateGraphic() {
 						var graphic = root.querySelector(".c-product-preview__graphic");
-						var bounds = graphic.getBoundingClientRect();
+						var bounds = root.getBoundingClientRect();
 						var centerOffset = Math.max(0, (bounds.top + bounds.height / 2) - window.innerHeight / 2);
 			
 						graphic.style.transform = `scale(${1 - centerOffset * 0.0001}) translateY(${centerOffset * 0.1}px)`;
 					}
 
-					updateGraphic();
-			
+					setTimeout(updateGraphic, 100);
+
 					window.addEventListener("scroll", updateGraphic);
 			}
 

@@ -25,36 +25,6 @@ body {
 }
 
 /**
- * Global component: Button
- * ------------------------
- */
-.c-button {
-	align-items: center;
-	border: 2px solid black;
-	border-radius: 30px;
-	color: #000;
-	cursor: pointer;
-	display: flex;
-	font-family: "Fredoka", sans-serif;
-	font-size: 20px;
-	font-variation-settings: "wdth" 100;
-	font-weight: 500;
-	padding: 15px 30px;
-	text-decoration: none;
-	transition: all 0.4s cubic-bezier(.08,1.99,.83,.67);
-	width: fit-content;
-}
-
-.c-button:hover {
-	filter: brightness(110%);
-	transform: scale(1.05);
-}
-
-.c-button:active {
-	transform: scale(0.95);
-}
-
-/**
  * Global component: Header
  * ------------------------
  */
@@ -138,4 +108,95 @@ body {
 .c-footer__links-list a {
 	color: #fff;
 	text-decoration: none;
+}
+
+/**
+ * Global component: Button
+ * ------------------------
+ */
+ .c-button {
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 30px;
+	color: #000;
+	cursor: pointer;
+	display: flex;
+	font-family: "Fredoka", sans-serif;
+	font-size: 20px;
+	font-variation-settings: "wdth" 100;
+	font-weight: 500;
+	padding: 15px 30px;
+	text-decoration: none;
+	transition: all 0.4s cubic-bezier(.08,1.99,.83,.67);
+	width: fit-content;
+}
+
+.c-button:hover {
+	filter: brightness(110%);
+	transform: scale(1.05);
+}
+
+.c-button:active {
+	transform: scale(0.95);
+}
+
+/**
+ * Global component: Banner
+ * ------------------------
+ */
+.c-banner {
+	display: flex;
+	height: 39vw;
+	position: relative;
+	width: 100%;
+}
+
+.c-banner.banner-500 {
+	height: 500px;
+}
+
+.c-banner.banner-500.concave {
+	height: 520px;
+}
+
+.c-banner.banner-400 {
+	height: 400px;
+}
+
+.c-banner.banner-400.concave {
+	height: 420px;
+}
+
+.c-banner.banner-300 {
+	height: 300px;
+}
+
+.c-banner.banner-300.concave {
+	height: 320px;
+}
+
+.c-banner.concave::after {
+	background-color: #fff;
+	border-radius: 50%;
+	bottom: -11.5vw;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	pointer-events: none;
+	position: absolute;
+	width: 150vw;
+}
+
+.c-banner.convex::after {
+	background-color: transparent;
+	border-radius: 50%;
+	bottom: 0;
+	box-shadow: 0 52px 0 50px #fff;
+	content: "";
+	height: 15vw;
+	left: -25vw;
+	pointer-events: none;
+	position: absolute;
+	width: 150vw;
 }
