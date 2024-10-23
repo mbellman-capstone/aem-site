@@ -12,6 +12,7 @@ footer.experiencefragment {
 
 main.container {
 	padding: 0 !important;
+	padding-top: 100px !important;
 }
 
 html:not(.aem-AuthorLayer-Edit) .aem-Grid-newComponent {

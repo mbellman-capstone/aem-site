@@ -21,13 +21,6 @@
                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                         fieldLabel="Banner background"
                         name="./bannerBackground"/>
-                    <videoDescription
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Video description"
-                        emptyText="Video description"
-                        rows="5"
-                        name="./videoDescription"/>
                     <sectionTitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
