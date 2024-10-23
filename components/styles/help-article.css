@@ -11,7 +11,7 @@
 	background-color: #470061;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 	overflow: hidden;
 }
 
@@ -34,32 +34,10 @@
 	width: 1000px;
 }
 
-.c-help-article__video-button {
-	background-color: #d9d9d9;
-	border: 0;
-	border-radius: 30px;
-	cursor: pointer;
-	height: 340px;
-	margin: 10px 0;
-	transition: all 0.2s;
-	width: 600px;
-}
-
-.c-help-article__video-button:hover {
-	background-color: #e9e9e9;
-}
-
-.c-help-article__video-description {
-	font-size: 28px;
-	margin-top: 40px;
-	max-width: 1000px;
-	text-align: center;
-}
-
 .c-help-article__section-title {
 	font-size: 40px;
 	font-variation-settings: "wght" 550, "opsz" 10;
-	margin: 150px 0 70px;
+	margin: 0 0 70px;
 }
 
 .c-help-article__footer-title {
@@ -114,9 +92,33 @@
 
 .c-help-article__ordered-list,
 .c-help-article__unordered-list {
+	font-size: 22px;
+	font-variation-settings: "wght" 350, "opsz" 10;
 	margin-left: 30px;
 	margin-top: 0;
 	width: 100%;
+}
+
+.c-help-article__video-button {
+	background-color: #d9d9d9;
+	border: 0;
+	border-radius: 30px;
+	cursor: pointer;
+	height: 340px;
+	margin: 10px 0;
+	transition: all 0.2s;
+	width: 600px;
+}
+
+.c-help-article__video-button:hover {
+	background-color: #e9e9e9;
+}
+
+.c-help-article__video-description {
+	font-size: 28px;
+	margin-top: 40px;
+	max-width: 1000px;
+	text-align: center;
 }
 
 .c-help-article__content strong {
