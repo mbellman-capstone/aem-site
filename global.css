@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fredoka:wght@300..700&display=swap');
 
 /**
+ * AEM overrides
+ * -------------
+ */
+header.experiencefragment,
+footer.experiencefragment {
+	border: 0 !important;
+}
+
+main.container {
+	padding: 0 !important;
+}
+
+.aem-Grid-newComponent {
+	display: none;
+}
+
+/**
  * Global animations
  * -----------------
  */
