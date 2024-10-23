@@ -77,7 +77,7 @@
 		var isGeneratingUnorderedList = false;
 		var html = "";
 
-		lines.forEach(function(line) {
+		lines.forEach(function(line, index) {
 			if (isGeneratingUnorderedList && !line.startsWith("*")) {
 				// Terminate unordered lists
 				html += "</ul>";
@@ -85,7 +85,7 @@
 			}
 
 			if (isGeneratingOrderedList && !/^[0-9*]./.test(line)) {
-				// Terminated ordered lists
+				// Terminate ordered lists
 				html += "</ol>";
 				isGeneratingOrderedList = false;
 			}
@@ -97,6 +97,7 @@
 				// Handle title directives
 				html += formatTitle(line);
 			} else if (line.startsWith("@video")) {
+				// Handle video directives
 				html += formatVideo(line);
 			} else if (line.startsWith("*")) {
 				// Handle unordered list items
@@ -117,7 +118,11 @@
 
 				isGeneratingOrderedList = true;
 			} else if (line.length > 0) {
-				html += `<div class="c-help-article__step">${replaceTags(line)}</div>`;
+				if (lines[index - 1] && lines[index - 1].startsWith("@image")) {
+					html += `<div class="c-help-article__caption">${replaceTags(line)}</div>`;
+				} else {
+					html += `<div class="c-help-article__text">${replaceTags(line)}</div>`;
+				}
 			}
 
 			html += "<br>";

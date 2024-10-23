@@ -29,6 +29,7 @@
 	font-size: 52px;
 	font-variation-settings: "wght" 700, "WONK" 0, "opsz" 10;
 	margin-top: -20px;
+	max-width: 100%;
 	position: relative;
 	text-align: center;
 	width: 1000px;
@@ -40,38 +41,12 @@
 	margin: 0 0 70px;
 }
 
-.c-help-article__footer-title {
-	font-size: 42px;
-	font-variation-settings: "wght" 550, "opsz" 10;
-}
-
 .c-help-article__content {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 80px;
 	position: relative;
-	width: 630px;
-}
-
-.c-help-article__image {
-	background-color: #d9d9d9;
-	border-radius: 30px;
-	display: flex;
-	overflow: hidden;
-	position: relative;
-	width: 600px;
-}
-
-.c-help-article__image img {
-	width: 100%;
-}
-
-.c-help-article__step {
-	font-size: 24px;
-	font-variation-settings: "wght" 350, "opsz" 10;
-	margin: 0 0 20px;
-	width: 100%;
 }
 
 .c-help-article__title {
@@ -80,14 +55,34 @@
 	width: 100%;
 }
 
-.c-help-article__links {
-	display: flex;
-	justify-content: center;
+.c-help-article__text {
+	font-size: 24px;
+	font-variation-settings: "wght" 350, "opsz" 10;
+	margin: 0 0 20px;
+	max-width: 100%;
+	width: 1000px;
 }
 
-.c-help-article__links .c-button {
-	background-color: #C0FF76;
-	margin: 0 15px;
+.c-help-article__caption {
+	font-size: 22px;
+	font-variation-settings: "wght" 350, "opsz" 10;
+	margin: 0 0 20px;
+	max-width: 100%;
+	width: 630px;
+}
+
+.c-help-article__image {
+	background-color: #d9d9d9;
+	border-radius: 30px;
+	display: flex;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 600px;
+}
+
+.c-help-article__image img {
+	width: 100%;
 }
 
 .c-help-article__ordered-list,
@@ -106,6 +101,7 @@
 	cursor: pointer;
 	height: 340px;
 	margin: 10px 0;
+	max-width: 100%;
 	transition: all 0.2s;
 	width: 600px;
 }
@@ -114,17 +110,33 @@
 	background-color: #e9e9e9;
 }
 
-.c-help-article__video-description {
-	font-size: 28px;
-	margin-top: 40px;
-	max-width: 1000px;
-	text-align: center;
-}
-
 .c-help-article__content strong {
 	font-variation-settings: "wght" 650, "opsz" 10;
 }
 
 .c-help-article__content a {
 	color: #1179B6;
+}
+
+.c-help-article__footer-title {
+	font-size: 42px;
+	font-variation-settings: "wght" 550, "opsz" 10;
+}
+
+.c-help-article__links {
+	display: flex;
+	justify-content: center;
+}
+
+.c-help-article__links .c-button {
+	background-color: #C0FF76;
+	margin: 0 15px;
+}
+
+@media screen and (max-width: 720px) {
+	.c-help-article__content {
+		box-sizing: border-box;
+		padding: 0 30px;
+		width: 100%;
+	}
 }
