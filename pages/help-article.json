@@ -7,7 +7,7 @@
 			"bannerBackground": "./assets/purple-sky.png",
 			"videoDescription": "Watch this video tutorial on sharing direct links to PebbleGo content",
 			"sectionTitle": "Section Title if needed",
-			"content": "@image ./assets/kids-with-computer.png\n\nStep 1: Navigate within PebbleGo to the category or article you want to share.\n\nStep 2: Click the Tools and Settings gear in the upper right corner, then select the “Copy Link” button.\n\n@image ./assets/sea-turtle.png",
+			"content": "@image ./assets/kids-with-computer.png\n\nStep 1: Navigate within PebbleGo to the [b]category[/b] or [b]article[/b] you want to share.\n\nStep 2: Click the [url=#testing_a_title]Tools and Settings[/url] gear in the upper right corner, then select the “Copy Link” button.\n\n@image ./assets/sea-turtle.png\n\n@title Testing a title\n\nStep 3. Do something else\n\n* Do this thing\n* Do that thing\n* Do another thing\n\nYou're finished!\n\n1. One\n2. Two\n3. Three\n\nFour!",
 			"moreQuestionsTitle": "Still have questions?",
 			"faqsText": "FAQs Page",
 			"faqsUrl": "#",

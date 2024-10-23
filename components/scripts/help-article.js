@@ -9,6 +9,127 @@
 			self:      '[data-cmp-is="help-article"]'
 	};
 
+	function removeDirective(line) {
+		return line.substring(line.indexOf(" ") + 1);
+	}
+
+	function replaceTags(text) {
+		return text
+			// Handle bold text
+			.replace(/\[b\]/g, "<strong>")
+			.replace(/\[\/b\]/g, "</strong>")
+			// Handle links
+			.replace(/\[url\=([\#A-Za-z0-9_]+)\]/g, function(_, match) {
+				return `<a href="${match}">`;
+			})
+			.replace(/\[\/url\]/g, "</a>");
+	}
+
+	function formatImage(line) {
+		var path = removeDirective(line);
+
+		return `<div class="c-help-article__image"><img src=${path}></div>`;
+	}
+
+	function formatTitle(line) {
+		var title = removeDirective(line);
+
+		var headingId = title.toLowerCase()
+			.replace(/\s/g, "_")
+			.replace(/[^a-z0-9_]/g, "");
+
+		return `<h2 id="${headingId}" class="c-help-article__title">${title}</h2>`;
+	}
+
+	function formatUnorderedListItem(line) {
+		var text = line.substring(2);
+
+		return `<li>${replaceTags(text)}</li>`;
+	}
+
+	function formatOrderedListItem(line) {
+		var text = line.substring(line.indexOf(" ") + 1);
+
+		return `<li>${replaceTags(text)}</li>`;
+	}
+
+	/**
+	 * Converts raw content text into HTML.
+	 *
+	 * @param {string} content 
+	 * @returns {string}
+	 */
+	function formatContent(content) {
+		var lines = content.split("\n");
+		var isGeneratingOrderedList = false;
+		var isGeneratingUnorderedList = false;
+		var generatedHtml = "";
+
+		lines.forEach(function(line) {
+			if (isGeneratingUnorderedList && !line.startsWith("*")) {
+				// Terminate unordered lists
+				generatedHtml += "</ul>";
+				isGeneratingUnorderedList = false;
+			}
+
+			if (isGeneratingOrderedList && !/^[0-9*]./.test(line)) {
+				// Terminated ordered lists
+				generatedHtml += "</ol>";
+				isGeneratingOrderedList = false;
+			}
+
+			if (line.startsWith("@image")) {
+				// Handle image directives
+				generatedHtml += formatImage(line);
+			} else if (line.startsWith("@title")) {
+				// Handle title directives
+				generatedHtml += formatTitle(line);
+			} else if (line.startsWith("*")) {
+				// Handle unordered list items
+				if (!isGeneratingUnorderedList) {
+					generatedHtml += `<ul class="c-help-article__unordered-list">`;
+				}
+
+				generatedHtml += formatUnorderedListItem(line);
+
+				isGeneratingUnorderedList = true;
+			} else if (/^[0-9*]./.test(line)) {
+				// Handle ordered list items
+				if (!isGeneratingOrderedList) {
+					generatedHtml += `<ol class="c-help-article__ordered-list">`;
+				}
+
+				generatedHtml += formatOrderedListItem(line);
+
+				isGeneratingOrderedList = true;
+			} else if (line.length > 0) {
+				generatedHtml += `<div class="c-help-article__step">${replaceTags(line)}</div>`;
+			}
+
+			generatedHtml += "<br>";
+		});
+
+		return generatedHtml;
+	}
+
+	function onLinkClick(event) {
+		var url = event.target.getAttribute("href");
+
+		if (url.startsWith("#")) {
+			// For intra-page links, find the target element and smoothly scroll to it
+			var target = document.querySelector(url);
+
+			if (target) {
+				window.scrollTo({
+					top: (target.getBoundingClientRect().top + window.scrollY) - 120,
+					behavior: 'smooth'
+				});
+
+				event.preventDefault();
+			}
+		}
+	}
+
 	function HelpArticle(config) {
 
 			function init(config) {
@@ -27,25 +148,17 @@
 					});
 
 					// Format content
-					var contentContainer = document.querySelector(".c-help-article__content");
+					var contentContainer = root.querySelector(".c-help-article__content");
 					var content = contentContainer.getAttribute("data-content");
 
-					var formattedContent = content
-						.split("\n")
-						.map(function(line) {
-							if (line.startsWith("@image")) {
-								var path = line.split(" ").pop();
+					contentContainer.innerHTML = formatContent(content);
 
-								return `<div class="c-help-article__image"><img src=${path}></div>`;
-							} else if (line.length > 0) {
-								return `<div class="c-help-article__step">${line}</div>`;
-							} else {
-								return "";
-							}
-						})
-						.join("<br>");
+					contentContainer.removeAttribute("data-content");
 
-					contentContainer.innerHTML = formattedContent;
+					// Handle link clicks
+					contentContainer.querySelectorAll("a").forEach(function(link) {
+						link.addEventListener("click", onLinkClick);
+					});
 			}
 
 			if (config && config.element) {
