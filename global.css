@@ -13,7 +13,7 @@ main.container {
 	padding: 0 !important;
 }
 
-.aem-Grid-newComponent {
+html:not(.aem-AuthorLayer-Edit) .aem-Grid-newComponent {
 	display: none;
 }
 
