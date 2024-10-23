@@ -3,7 +3,16 @@
 	"components": [
 		{
 			"component": "pricing-banner",
-			"background": "./assets/classroom.png"
+			"background": "./assets/classroom.png",
+			"title": "Packages tailored to the needs of every school",
+			"description": "PebbleGo offers a unique combination of trusted, engaging content and active learning tools to help students understand the world around them."
+		},
+		{
+			"component": "pricing-products",
+			"firstProductName": "Content",
+			"firstProductImage": "./assets/content-product.png",
+			"secondProductName": "Digital Tools",
+			"secondProductImage": "./assets/digital-tools-product.png"
 		}
 	]
 }
