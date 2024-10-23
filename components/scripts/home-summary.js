@@ -27,6 +27,17 @@
 			
 						animal.style.transform = `translateY(${-centerOffset * 0.05}px)`;
 					});
+
+					// Format title
+					var title = root.querySelector(".c-home-summary__title");
+
+					var formatted = title.innerText
+						.replace("*", "<span>")
+						.replace("*", "</span>")
+						.replace("*", "<span>")
+						.replace("*", "</span>");
+
+					title.innerHTML = formatted;
 			}
 
 			if (config && config.element) {

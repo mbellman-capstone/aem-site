@@ -4,13 +4,13 @@
 		{
 			"component": "home-banner",
 			"background": "./assets/purple-sky.png",
-			"text": "We help <span>elementary</span> kids make sense of the world",
+			"text": "We help *elementary* kids make sense of the world",
 			"graphic": "./assets/girl-with-screen.png",
 			"moonImage": "./assets/moon.png"
 		},
 		{
 			"component": "home-summary",
-			"title": "The <span>POWER</span> of <span>PebbleGo</span>",
+			"title": "The *POWER* of *PebbleGo*",
 			"graphic": "./assets/pebblego-devices.png",
 			"animalGraphic": "./assets/axolotl.png"
 		},
