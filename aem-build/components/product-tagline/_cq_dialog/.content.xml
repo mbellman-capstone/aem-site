@@ -21,6 +21,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Tagline"
                         emptyText="Tagline"
+                        rows="5"
                         name="./tagline"/>
                 </items>
             </column>

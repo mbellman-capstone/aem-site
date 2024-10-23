@@ -16,6 +16,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Text"
                         emptyText="Text"
+                        rows="9"
                         name="./text"/>
                     <graphic
                         jcr:primaryType="nt:unstructured"

@@ -26,6 +26,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Tagline"
                         emptyText="Tagline"
+                        rows="5"
                         name="./tagline"/>
                     <buttonText
                         jcr:primaryType="nt:unstructured"
@@ -37,6 +38,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description"
                         emptyText="Description"
+                        rows="5"
                         name="./description"/>
                     <color
                         jcr:primaryType="nt:unstructured"

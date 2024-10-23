@@ -26,6 +26,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Text"
                         emptyText="Text"
+                        rows="5"
                         name="./text"/>
                     <buttonText
                         jcr:primaryType="nt:unstructured"

@@ -84,11 +84,14 @@ for (const { component: componentName, ...properties } of uniqueComponentExample
                         fieldLabel="${finalFieldLabel}"
                         name="./${key}"/>`;
       } else if (value.length > 50) {
+        const rows = value.length > 300 ? Math.floor(value.length / 40) : 5;
+
         return `                    <${key}
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="${finalFieldLabel}"
                         emptyText="${finalFieldLabel}"
+                        rows="${rows}"
                         name="./${key}"/>`;
       } else {
         return `                    <${key}

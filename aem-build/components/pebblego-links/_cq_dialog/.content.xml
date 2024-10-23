@@ -51,6 +51,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description2"
                         emptyText="Description2"
+                        rows="5"
                         name="./description2"/>
                     <url2
                         jcr:primaryType="nt:unstructured"
@@ -72,6 +73,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description3"
                         emptyText="Description3"
+                        rows="5"
                         name="./description3"/>
                     <url3
                         jcr:primaryType="nt:unstructured"
@@ -93,6 +95,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description4"
                         emptyText="Description4"
+                        rows="5"
                         name="./description4"/>
                     <url4
                         jcr:primaryType="nt:unstructured"

@@ -26,6 +26,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Video description"
                         emptyText="Video description"
+                        rows="5"
                         name="./videoDescription"/>
                     <sectionTitle
                         jcr:primaryType="nt:unstructured"
@@ -37,6 +38,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Content"
                         emptyText="Content"
+                        rows="13"
                         name="./content"/>
                     <moreQuestionsTitle
                         jcr:primaryType="nt:unstructured"
