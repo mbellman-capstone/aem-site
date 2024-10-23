@@ -1,9 +1,13 @@
 .c-pricing-banner {
+	color: #fff;
+	flex-direction: column;
+	justify-content: center;
 	overflow: hidden;
 }
 
 .c-pricing-banner__background {
-	position: relative;
+	height: 100%;
+	position: absolute;
 	width: 100%;
 }
 
@@ -14,4 +18,22 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+.c-pricing-banner__heading {
+	font-size: 40px;
+	font-variation-settings: "wght" 500, "opsz" 10;
+	margin: 0 auto 40px;
+	max-width: 600px;
+	position: relative;
+	text-align: center;
+}
+
+.c-pricing-banner__description {
+	font-size: 22px;
+	font-variation-settings: "wght" 350, "opsz" 10;
+	margin: 0 auto;
+	max-width: 640px;
+	position: relative;
+	text-align: center;
 }

@@ -11,22 +11,26 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <background
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Background"
-                        name="./background"/>
-                    <title
+                    <firstProductName
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title"
-                        name="./title"/>
-                    <description
+                        fieldLabel="First product name"
+                        name="./firstProductName"/>
+                    <firstProductImage
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Description"
-                        emptyText="Description"
-                        name="./description"/>
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="First product image"
+                        name="./firstProductImage"/>
+                    <secondProductName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Second product name"
+                        name="./secondProductName"/>
+                    <secondProductImage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Second product image"
+                        name="./secondProductImage"/>
                 </items>
             </column>
         </items>

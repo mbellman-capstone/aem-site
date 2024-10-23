@@ -17,3 +17,5 @@ for (const folder of componentFolders) {
 for (const asset of componentAssets) {
 	fs.cpSync(`aem-build/clientlibs/${asset}`, `${targetAssetsPath}/${asset}`);
 }
+
+fs.cpSync("global.css", path.join(__dirname, "..", TARGET_REPO, "ui.frontend/src/main/webpack/site/_global.scss"));

@@ -35,6 +35,15 @@
 							rocketShip.classList.remove('flying');
 						}
 					});
+
+					// Format text
+					var text = root.querySelector(".c-home-banner__text");
+
+					var formatted = text.innerText
+						.replace("*", "<span>")
+						.replace("*", "</span>");
+
+					text.innerHTML = formatted;
 			}
 
 			if (config && config.element) {
