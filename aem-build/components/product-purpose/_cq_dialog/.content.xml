@@ -13,8 +13,10 @@
                 <items jcr:primaryType="nt:unstructured">
                     <graphic
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Graphic"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Graphic"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./graphic"/>
                     <title
                         jcr:primaryType="nt:unstructured"

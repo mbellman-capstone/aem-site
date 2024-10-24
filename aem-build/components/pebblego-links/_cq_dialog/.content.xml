@@ -18,89 +18,97 @@
                         name="./title"/>
                     <icon1
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Icon1"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Icon 1"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./icon1"/>
                     <title1
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title1"
+                        fieldLabel="Title 1"
                         name="./title1"/>
                     <description1
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Description1"
+                        fieldLabel="Description 1"
                         name="./description1"/>
                     <url1
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Url1"
+                        fieldLabel="Url 1"
                         name="./url1"/>
                     <icon2
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Icon2"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Icon 2"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./icon2"/>
                     <title2
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title2"
+                        fieldLabel="Title 2"
                         name="./title2"/>
                     <description2
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Description2"
-                        emptyText="Description2"
+                        fieldLabel="Description 2"
+                        emptyText="Description 2"
                         rows="5"
                         name="./description2"/>
                     <url2
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Url2"
+                        fieldLabel="Url 2"
                         name="./url2"/>
                     <icon3
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Icon3"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Icon 3"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./icon3"/>
                     <title3
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title3"
+                        fieldLabel="Title 3"
                         name="./title3"/>
                     <description3
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Description3"
-                        emptyText="Description3"
+                        fieldLabel="Description 3"
+                        emptyText="Description 3"
                         rows="5"
                         name="./description3"/>
                     <url3
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Url3"
+                        fieldLabel="Url 3"
                         name="./url3"/>
                     <icon4
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Icon4"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Icon 4"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./icon4"/>
                     <title4
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title4"
+                        fieldLabel="Title 4"
                         name="./title4"/>
                     <description4
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Description4"
-                        emptyText="Description4"
+                        fieldLabel="Description 4"
+                        emptyText="Description 4"
                         rows="5"
                         name="./description4"/>
                     <url4
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Url4"
+                        fieldLabel="Url 4"
                         name="./url4"/>
                 </items>
             </column>

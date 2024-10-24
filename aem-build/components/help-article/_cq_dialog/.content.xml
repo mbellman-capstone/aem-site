@@ -18,8 +18,10 @@
                         name="./title"/>
                     <bannerBackground
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Banner background"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Banner background"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./bannerBackground"/>
                     <sectionTitle
                         jcr:primaryType="nt:unstructured"

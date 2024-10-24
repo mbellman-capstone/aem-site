@@ -19,36 +19,44 @@
                     <quote1
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Quote1"
-                        emptyText="Quote1"
+                        fieldLabel="Quote 1"
+                        emptyText="Quote 1"
                         rows="5"
                         name="./quote1"/>
                     <attribution1
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Attribution1"
-                        emptyText="Attribution1"
+                        fieldLabel="Attribution 1"
+                        emptyText="Attribution 1"
                         rows="5"
                         name="./attribution1"/>
                     <awardGraphic1
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Award graphic1"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Award graphic 1"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./awardGraphic1"/>
                     <awardGraphic2
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Award graphic2"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Award graphic 2"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./awardGraphic2"/>
                     <awardGraphic3
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Award graphic3"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Award graphic 3"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./awardGraphic3"/>
                     <awardGraphic4
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Award graphic4"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Award graphic 4"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./awardGraphic4"/>
                 </items>
             </column>

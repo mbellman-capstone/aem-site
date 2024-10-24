@@ -18,13 +18,17 @@
                         name="./title"/>
                     <graphic
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Graphic"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Graphic"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./graphic"/>
                     <animalGraphic
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Animal graphic"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Animal graphic"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./animalGraphic"/>
                 </items>
             </column>

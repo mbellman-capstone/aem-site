@@ -67,9 +67,13 @@ for (const { component: componentName, ...properties } of uniqueComponentExample
       // E.g. "backgroundImage" -> "Background image"
       const fieldLabel = key
         // Split the key at capital letters, preserving the letter in the array
-        .split(/([A-Z])/g)
+        .split(/([A-Z0-9])/g)
         // Convert capital letters into lowercase preceded by a space
-        .map(part => /[A-Z]/.test(part[0]) ? ` ${part.toLowerCase()}` : part)
+        .map(part =>
+            /[A-Z]/.test(part[0]) ? ` ${part.toLowerCase()}` :
+            /[0-9]/.test(part[0]) ? ` ${part}` :
+            part
+        )
         .join("");
 
       // Capitalize the first letter of the label
@@ -80,8 +84,10 @@ for (const { component: componentName, ...properties } of uniqueComponentExample
       if (isImage) {
         return `                    <${key}
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="${finalFieldLabel}"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="${finalFieldLabel}"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./${key}"/>`;
       } else if (value.length > 50) {
         const rows = value.length > 300 ? Math.floor(value.length / 40) : 5;

@@ -40,8 +40,10 @@
                         name="./color"/>
                     <image
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Image"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        emptyText="Image"
+                        rootPath="/content/dam"
+                        filter="image"
                         name="./image"/>
                 </items>
             </column>
