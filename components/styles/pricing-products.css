@@ -12,9 +12,14 @@
 
 .c-pricing-products__primary-product,
 .c-pricing-products__secondary-product {
+	align-items: center;
 	border-radius: 30px;
-	height: 600px;
+	display: flex;
+	flex-direction: column;
+	min-height: 600px;
 	margin: 0 30px;
+	padding-bottom: 20px;
+	position: relative;
 	width: 500px;
 }
 
@@ -24,4 +29,35 @@
 
 .c-pricing-products__secondary-product {
 	background-color: #FCF43D;
+}
+
+.c-pricing-products__title {
+	font-size: 54px;
+	font-variation-settings: "wght" 700, "opsz" 10;
+	margin: 40px 0 0;
+	text-align: center;
+}
+
+.c-pricing-products__squiggle {
+	position: relative;
+}
+
+.c-pricing-products__image {
+	box-sizing: border-box;
+	padding: 0 40px;
+	position: relative;
+	width: 100%;
+}
+
+.c-pricing-products__image img {
+	width: 100%;
+}
+
+.c-pricing-products__description {
+	font-family: "Fredoka", sans-serif;
+	font-variation-settings: "wght" 350;
+	line-height: 1.5;
+	margin: 0 auto 20px;
+	text-align: center;
+	width: 280px;
 }

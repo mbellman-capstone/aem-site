@@ -10,9 +10,12 @@
 		{
 			"component": "pricing-products",
 			"firstProductName": "Content",
-			"firstProductImage": "./assets/content-product.png",
+			"firstProductImage": "./assets/pricing-content.png",
+			"firstProductDescription": "Discover PebbleGo, a trusted online nonfiction research tool with engaging and kid-friendly content.",
 			"secondProductName": "Digital Tools",
-			"secondProductImage": "./assets/digital-tools-product.png"
+			"secondProductImage": "./assets/pricing-tools.png",
+			"secondProductDescription": "Get the ultimate PebbleGo experience. Add tools to enhance discoverability and empower students to show what they know!",
+			"learnMoreText": "Learn More"
 		}
 	]
 }
