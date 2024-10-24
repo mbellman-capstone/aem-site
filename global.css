@@ -79,6 +79,7 @@ body {
 	margin-top: 120px;
 	padding: 20px 100px 40px;
 	position: relative;
+	z-index: 5;
 }
 
 .c-footer::before {
